@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E7C986" />
+      <stop offset="50%" stop-color="#C5A059" />
+      <stop offset="100%" stop-color="#8C6D32" />
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="30" fill="#FAF7F2" stroke="url(#goldGrad)" stroke-width="2.5" />
+  <circle cx="32" cy="32" r="26" fill="none" stroke="url(#goldGrad)" stroke-width="0.8" stroke-dasharray="2,2" />
+  <!-- Lotus Petals at bottom -->
+  <path d="M32 50 C26 44 26 38 32 36 C38 38 38 44 32 50 Z" fill="#E93B6C" opacity="0.9"/>
+  <path d="M26 49 C21 45 22 40 28 38 C30 43 28 47 26 49 Z" fill="#C2185B" opacity="0.75"/>
+  <path d="M38 49 C43 45 42 40 36 38 C34 43 36 47 38 49 Z" fill="#C2185B" opacity="0.75"/>
+  <!-- Monogram S & L -->
+  <text x="32" y="27" font-family="'Cinzel Decorative', 'Cormorant Garamond', serif" font-size="13" font-weight="700" fill="#1B3B2B" text-anchor="middle" letter-spacing="1">S &amp; L</text>
+  <text x="32" y="35" font-family="'Montserrat', sans-serif" font-size="5" font-weight="600" fill="#8C6D32" text-anchor="middle" letter-spacing="2">2027</text>
+</svg>

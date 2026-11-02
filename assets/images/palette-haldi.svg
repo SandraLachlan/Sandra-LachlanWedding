@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 160" width="420" height="160">
+  <defs>
+    <linearGradient id="haldiBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFDF7" />
+      <stop offset="100%" stop-color="#FFF8E7" />
+    </linearGradient>
+    <linearGradient id="goldTrim" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C5A059" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#E7C986" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#C5A059" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Card Background -->
+  <rect x="2" y="2" width="416" height="156" rx="10" fill="url(#haldiBg)" stroke="#C5A059" stroke-width="1.2"/>
+  <rect x="7" y="7" width="406" height="146" rx="8" fill="none" stroke="url(#goldTrim)" stroke-width="0.8" stroke-dasharray="3,3"/>
+
+  <!-- Title & Icon -->
+  <text x="210" y="32" font-family="'Cormorant Garamond', Georgia, serif" font-size="15" font-weight="700" fill="#1B3B2B" text-anchor="middle" letter-spacing="1.5">HALDI CEREMONY COLOR PALETTE</text>
+  <text x="210" y="48" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#7A6020" text-anchor="middle" letter-spacing="1">JOYFUL SUNSHINE &amp; AUSPICIOUS FESTIVE TONES</text>
+
+  <!-- Swatches Group -->
+  <g transform="translate(45, 62)">
+    <!-- Swatch 1: Warm Turmeric -->
+    <circle cx="28" cy="28" r="22" fill="#FBBF24" stroke="#D97706" stroke-width="1.5" />
+    <text x="28" y="66" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="600" fill="#1B3B2B" text-anchor="middle">Turmeric</text>
+
+    <!-- Swatch 2: Marigold Orange -->
+    <circle cx="98" cy="28" r="22" fill="#F97316" stroke="#C2410C" stroke-width="1.5" />
+    <text x="98" y="66" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="600" fill="#1B3B2B" text-anchor="middle">Marigold</text>
+
+    <!-- Swatch 3: Sunshine Yellow -->
+    <circle cx="168" cy="28" r="22" fill="#FEF08A" stroke="#EAB308" stroke-width="1.5" />
+    <text x="168" y="66" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="600" fill="#1B3B2B" text-anchor="middle">Sunshine</text>
+
+    <!-- Swatch 4: Festive Coral Pink -->
+    <circle cx="238" cy="28" r="22" fill="#FB7185" stroke="#E11D48" stroke-width="1.5" />
+    <text x="238" y="66" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="600" fill="#1B3B2B" text-anchor="middle">Coral Pink</text>
+
+    <!-- Swatch 5: Raw Silk Cream -->
+    <circle cx="308" cy="28" r="22" fill="#FFFDF8" stroke="#C5A059" stroke-width="1.5" />
+    <text x="308" y="66" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="600" fill="#1B3B2B" text-anchor="middle">Warm Cream</text>
+  </g>
+</svg>

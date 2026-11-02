@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 120" width="160" height="120">
+  <defs>
+    <!-- Lotus petal gradient outer -->
+    <linearGradient id="lotusOuter" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#C2185B" />
+      <stop offset="40%" stop-color="#E93B6C" />
+      <stop offset="85%" stop-color="#FFD6E3" />
+      <stop offset="100%" stop-color="#FFFFFF" />
+    </linearGradient>
+
+    <!-- Lotus petal gradient inner -->
+    <linearGradient id="lotusInner" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#AD1457" />
+      <stop offset="50%" stop-color="#E93B6C" />
+      <stop offset="90%" stop-color="#FFF0F4" />
+      <stop offset="100%" stop-color="#FFFFFF" />
+    </linearGradient>
+
+    <!-- Center gold stamen gradient -->
+    <linearGradient id="goldStamen" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#C5A059" />
+      <stop offset="100%" stop-color="#FFEBB8" />
+    </linearGradient>
+
+    <!-- Pista leaf gradient -->
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7E9E7A" />
+      <stop offset="60%" stop-color="#9BB896" />
+      <stop offset="100%" stop-color="#4F754D" />
+    </linearGradient>
+  </defs>
+
+  <!-- Pista Green Lotus Lily Pad / Leaves -->
+  <g id="leaves">
+    <!-- Left Leaf -->
+    <path d="M80 95 C55 85 25 90 12 104 C30 114 62 108 80 98 Z" fill="url(#leafGrad)" opacity="0.85" />
+    <path d="M80 96 C50 92 30 96 18 103" stroke="#C5A059" stroke-width="0.8" fill="none" opacity="0.6"/>
+    
+    <!-- Right Leaf -->
+    <path d="M80 95 C105 85 135 90 148 104 C130 114 98 108 80 98 Z" fill="url(#leafGrad)" opacity="0.85" />
+    <path d="M80 96 C110 92 130 96 142 103" stroke="#C5A059" stroke-width="0.8" fill="none" opacity="0.6"/>
+  </g>
+
+  <!-- Bottom Tier Petals -->
+  <g id="outer-petals">
+    <!-- Far Left Petal -->
+    <path d="M80 92 C55 92 25 78 18 64 C32 60 58 75 80 88 Z" fill="url(#lotusOuter)" opacity="0.9" />
+    <!-- Far Right Petal -->
+    <path d="M80 92 C105 92 135 78 142 64 C128 60 102 75 80 88 Z" fill="url(#lotusOuter)" opacity="0.9" />
+    
+    <!-- Mid-Low Left Petal -->
+    <path d="M80 92 C55 82 32 60 35 44 C48 46 68 70 80 90 Z" fill="url(#lotusOuter)" />
+    <!-- Mid-Low Right Petal -->
+    <path d="M80 92 C105 82 128 60 125 44 C112 46 92 70 80 90 Z" fill="url(#lotusOuter)" />
+  </g>
+
+  <!-- Mid Tier Petals -->
+  <g id="mid-petals">
+    <!-- Mid Left -->
+    <path d="M80 94 C60 76 46 45 52 28 C64 36 74 65 80 92 Z" fill="url(#lotusInner)" />
+    <!-- Mid Right -->
+    <path d="M80 94 C100 76 114 45 108 28 C96 36 86 65 80 92 Z" fill="url(#lotusInner)" />
+  </g>
+
+  <!-- Central Crown Petals -->
+  <g id="central-petals">
+    <!-- Left Center Petal -->
+    <path d="M80 96 C68 74 62 38 72 16 C78 28 80 62 80 96 Z" fill="url(#lotusInner)" />
+    <!-- Right Center Petal -->
+    <path d="M80 96 C92 74 98 38 88 16 C82 28 80 62 80 96 Z" fill="url(#lotusInner)" />
+    <!-- Focal Queen Petal -->
+    <path d="M80 96 C72 65 72 30 80 10 C88 30 88 65 80 96 Z" fill="url(#lotusInner)" />
+  </g>
+
+  <!-- Golden Core / Pod / Stamen -->
+  <g id="core-glow">
+    <ellipse cx="80" cy="80" rx="9" ry="6" fill="url(#goldStamen)" />
+    <circle cx="76" cy="79" r="1.2" fill="#8C6D32" />
+    <circle cx="80" cy="77" r="1.2" fill="#8C6D32" />
+    <circle cx="84" cy="79" r="1.2" fill="#8C6D32" />
+    <circle cx="78" cy="82" r="1.2" fill="#8C6D32" />
+    <circle cx="82" cy="82" r="1.2" fill="#8C6D32" />
+  </g>
+  
+  <!-- Subtle Dewdrop shine -->
+  <ellipse cx="78" cy="30" rx="1.5" ry="3" fill="#FFFFFF" opacity="0.7" transform="rotate(-15 78 30)"/>
+</svg>

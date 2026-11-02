@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 400" width="200" height="400">
+  <defs>
+    <!-- Brass gradient -->
+    <linearGradient id="brassGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8C6D32" />
+      <stop offset="25%" stop-color="#E7C986" />
+      <stop offset="50%" stop-color="#FFF3D4" />
+      <stop offset="75%" stop-color="#C5A059" />
+      <stop offset="100%" stop-color="#6F531B" />
+    </linearGradient>
+    
+    <!-- Base shadow gradient -->
+    <linearGradient id="brassDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#C5A059" />
+      <stop offset="100%" stop-color="#5A4011" />
+    </linearGradient>
+
+    <!-- Flame gradient -->
+    <radialGradient id="flameGrad" cx="50%" cy="70%" r="60%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="20%" stop-color="#FFF2A3" />
+      <stop offset="60%" stop-color="#FF9E2C" />
+      <stop offset="90%" stop-color="#E63917" />
+      <stop offset="100%" stop-color="transparent" />
+    </radialGradient>
+
+    <!-- Flame glow filter -->
+    <filter id="flameGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur1" />
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <radialGradient id="auraGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFE79A" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#FFA834" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#FAF7F2" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Aura Glow behind flame -->
+  <circle cx="100" cy="50" r="45" fill="url(#auraGrad)" />
+
+  <!-- Top Crown / Spire / Thala (The sacred pinnacle) -->
+  <path d="M100 24 C97 32 94 36 94 40 L106 40 C106 36 103 32 100 24 Z" fill="url(#brassGrad)" />
+  <ellipse cx="100" cy="40" rx="6" ry="2" fill="#8C6D32" />
+
+  <!-- Sacred Flame (Deepam) -->
+  <g filter="url(#flameGlow)">
+    <path d="M100 28 C93 42 90 52 94 62 C97 68 103 68 106 62 C110 52 107 42 100 28 Z" fill="url(#flameGrad)" />
+  </g>
+  <!-- Wick ember -->
+  <line x1="100" y1="58" x2="100" y2="65" stroke="#3D1C06" stroke-width="2.5" stroke-linecap="round" />
+
+  <!-- Top Oil Bowl / Thattu (Upper oil reservoir) -->
+  <ellipse cx="100" cy="68" rx="26" ry="6" fill="url(#brassGrad)" stroke="#5A4011" stroke-width="0.8" />
+  <ellipse cx="100" cy="66" rx="24" ry="4" fill="#A87F30" />
+  <!-- Oil gloss inside -->
+  <ellipse cx="100" cy="66" rx="18" ry="2.5" fill="#C99B3B" />
+  
+  <!-- Spouts / Decorative Wick notches (Points of the lamp) -->
+  <path d="M74 68 C70 66 70 70 74 72 Z" fill="#8C6D32" />
+  <path d="M126 68 C130 66 130 70 126 72 Z" fill="#8C6D32" />
+
+  <!-- Bowl Under-cup -->
+  <path d="M76 69 C80 82 120 82 124 69 Z" fill="url(#brassGrad)" />
+  <ellipse cx="100" cy="80" rx="12" ry="3" fill="#8C6D32" />
+
+  <!-- Upper neck / ring collar -->
+  <rect x="94" y="81" width="12" height="12" fill="url(#brassGrad)" rx="2" />
+  <ellipse cx="100" cy="93" rx="16" ry="3.5" fill="url(#brassGrad)" stroke="#5A4011" stroke-width="0.5" />
+
+  <!-- Middle Main Thattu (Lower broader oil rim) -->
+  <ellipse cx="100" cy="115" rx="46" ry="9" fill="url(#brassGrad)" stroke="#5A4011" stroke-width="1" />
+  <ellipse cx="100" cy="113" rx="43" ry="7" fill="#8C6D32" />
+  <ellipse cx="100" cy="112" rx="38" ry="4.5" fill="#B3862E" />
+
+  <!-- Delicate Oil Wicks on rim -->
+  <circle cx="58" cy="115" r="1.8" fill="#FFF2A3" />
+  <circle cx="142" cy="115" r="1.8" fill="#FFF2A3" />
+  <circle cx="100" cy="122" r="1.8" fill="#FFF2A3" />
+
+  <!-- Lower Bowl contour -->
+  <path d="M57 116 C68 138 132 138 143 116 Z" fill="url(#brassGrad)" />
+  
+  <!-- Ornamental beads around bowl lip -->
+  <g fill="#FFF3D4" opacity="0.8">
+    <circle cx="65" cy="120" r="1.5" /><circle cx="75" cy="124" r="1.5" />
+    <circle cx="87" cy="126" r="1.5" /><circle cx="100" cy="127" r="1.5" />
+    <circle cx="113" cy="126" r="1.5" /><circle cx="125" cy="124" r="1.5" />
+    <circle cx="135" cy="120" r="1.5" />
+  </g>
+
+  <!-- Neck Collar below main bowl -->
+  <ellipse cx="100" cy="136" rx="20" ry="4" fill="url(#brassGrad)" />
+  <path d="M85 137 C87 148 113 148 115 137 Z" fill="#8C6D32" />
+
+  <!-- Intricate Ribbed Pillar (Thandu) -->
+  <ellipse cx="100" cy="150" rx="14" ry="3" fill="url(#brassGrad)" />
+  
+  <!-- Pillar central bulb 1 -->
+  <path d="M90 152 C84 175 84 195 90 215 L110 215 C116 195 116 175 110 152 Z" fill="url(#brassGrad)" />
+  <!-- Pillar vertical grooves/shine -->
+  <line x1="97" y1="155" x2="97" y2="212" stroke="#FFF3D4" stroke-width="1.2" opacity="0.7"/>
+  <line x1="100" y1="153" x2="100" y2="214" stroke="#FFF3D4" stroke-width="2" opacity="0.9"/>
+  <line x1="104" y1="155" x2="104" y2="212" stroke="#A87F30" stroke-width="1" opacity="0.7"/>
+
+  <!-- Mid pillar ornamental ring -->
+  <ellipse cx="100" cy="217" rx="18" ry="4" fill="url(#brassGrad)" stroke="#5A4011" stroke-width="0.8" />
+  <ellipse cx="100" cy="223" rx="15" ry="3.5" fill="url(#brassGrad)" />
+
+  <!-- Lower Pillar Shaft -->
+  <path d="M88 225 C84 250 84 275 88 298 L112 298 C116 275 116 250 112 225 Z" fill="url(#brassGrad)" />
+  <line x1="98" y1="227" x2="98" y2="295" stroke="#FFF3D4" stroke-width="1.5" opacity="0.8"/>
+  <line x1="103" y1="227" x2="103" y2="295" stroke="#8C6D32" stroke-width="1.2" opacity="0.7"/>
+
+  <!-- Lower Pillar Flange -->
+  <ellipse cx="100" cy="300" rx="22" ry="5" fill="url(#brassGrad)" stroke="#5A4011" stroke-width="0.8" />
+
+  <!-- The Tiered Base (Peedam / Adithara) -->
+  <!-- Tier 1 -->
+  <path d="M74 304 L60 326 L140 326 L126 304 Z" fill="url(#brassGrad)" />
+  <ellipse cx="100" cy="326" rx="42" ry="7" fill="url(#brassGrad)" stroke="#5A4011" stroke-width="0.8" />
+  
+  <!-- Tier 2 (Petal carvings / Lotus base) -->
+  <path d="M54 329 C46 350 42 364 36 374 L164 374 C158 364 154 350 146 329 Z" fill="url(#brassGrad)" />
+  <!-- Lotus petal engraving lines on pedestal -->
+  <path d="M60 365 C70 345 80 345 90 368" fill="none" stroke="#6F531B" stroke-width="1.2" />
+  <path d="M80 368 C90 345 100 345 110 368" fill="none" stroke="#6F531B" stroke-width="1.2" />
+  <path d="M100 368 C110 345 120 345 130 368" fill="none" stroke="#6F531B" stroke-width="1.2" />
+  <path d="M120 368 C130 345 140 345 150 365" fill="none" stroke="#6F531B" stroke-width="1.2" />
+
+  <!-- Base foot rim -->
+  <ellipse cx="100" cy="374" rx="66" ry="11" fill="url(#brassGrad)" stroke="#5A4011" stroke-width="1.2" />
+  <path d="M34 374 L32 384 C32 390 168 390 168 384 L166 374 Z" fill="url(#brassDark)" />
+  <ellipse cx="100" cy="385" rx="68" ry="10" fill="url(#brassGrad)" stroke="#5A4011" stroke-width="1.5" />
+
+  <!-- Subtle ground shadow -->
+  <ellipse cx="100" cy="392" rx="74" ry="6" fill="#1B3B2B" opacity="0.12" />
+</svg>

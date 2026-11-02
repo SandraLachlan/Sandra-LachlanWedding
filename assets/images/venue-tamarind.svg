@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="tamarindSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFDF7" />
+      <stop offset="50%" stop-color="#FAF1E4" />
+      <stop offset="100%" stop-color="#EFE3D3" />
+    </linearGradient>
+    <linearGradient id="heritageRoof" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#C2634B" />
+      <stop offset="100%" stop-color="#7D3525" />
+    </linearGradient>
+    <linearGradient id="woodCarving" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5A3D1E" />
+      <stop offset="50%" stop-color="#8C6239" />
+      <stop offset="100%" stop-color="#4A2E12" />
+    </linearGradient>
+    <linearGradient id="goldTrim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E7C986" />
+      <stop offset="50%" stop-color="#C5A059" />
+      <stop offset="100%" stop-color="#8C6D32" />
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="600" height="260" fill="url(#tamarindSky)" />
+  <!-- Courtyard / Lawn Ground -->
+  <rect y="260" width="600" height="140" fill="#E8DECة" fill-opacity="0.9" />
+  <rect y="260" width="600" height="140" fill="#DFCDBB" />
+
+  <!-- Tamarind & Heritage Courtyard Palms -->
+  <g stroke="#264632" fill="none">
+    <!-- Left foliage -->
+    <path d="M60 260 Q70 170 110 110" stroke-width="5"/>
+    <path d="M110 110 Q145 90 170 120" stroke-width="2.5"/>
+    <path d="M110 110 Q140 70 160 80" stroke-width="2.5"/>
+    <path d="M110 110 Q100 60 80 80" stroke-width="2.5"/>
+    <path d="M110 110 Q70 80 60 110" stroke-width="2.5"/>
+
+    <!-- Right foliage -->
+    <path d="M540 260 Q520 160 480 100" stroke-width="5"/>
+    <path d="M480 100 Q440 80 410 110" stroke-width="2.5"/>
+    <path d="M480 100 Q450 60 430 70" stroke-width="2.5"/>
+    <path d="M480 100 Q490 50 510 70" stroke-width="2.5"/>
+    <path d="M480 100 Q520 70 535 100" stroke-width="2.5"/>
+  </g>
+
+  <!-- Traditional Kerala Heritage Nalukettu Manor / Facade (Tamarind Heritage) -->
+  <g id="heritage-manor" transform="translate(300, 240)">
+    <!-- Heritage Plinth / Raised Verandah (Thinnai / Charupady) -->
+    <rect x="-220" y="0" width="440" height="22" fill="#BAA892" stroke="#6F531B" stroke-width="1.2"/>
+    <rect x="-210" y="2" width="420" height="8" fill="#D3C5B2" />
+
+    <!-- Carved Teak Wooden Pillars -->
+    <g fill="url(#woodCarving)" stroke="#3A220B" stroke-width="0.8">
+      <rect x="-190" y="-95" width="14" height="95" rx="2"/>
+      <rect x="-120" y="-95" width="14" height="95" rx="2"/>
+      <rect x="-50" y="-95" width="14" height="95" rx="2"/>
+      <rect x="36" y="-95" width="14" height="95" rx="2"/>
+      <rect x="106" y="-95" width="14" height="95" rx="2"/>
+      <rect x="176" y="-95" width="14" height="95" rx="2"/>
+    </g>
+
+    <!-- Traditional Wooden Lattice Windows / Jali Screen behind pillars -->
+    <rect x="-170" y="-85" width="40" height="50" fill="#FFFDF8" stroke="#8C6239" stroke-width="1"/>
+    <rect x="-30" y="-85" width="60" height="85" fill="#5A3D1E" stroke="#3A220B" stroke-width="1.5"/>
+    <!-- Grand Entrance Doorway Carvings -->
+    <rect x="-24" y="-80" width="20" height="75" fill="#754E26"/>
+    <rect x="4" y="-80" width="20" height="75" fill="#754E26"/>
+    <circle cx="-6" cy="-40" r="2.5" fill="#E7C986"/>
+    <circle cx="6" cy="-40" r="2.5" fill="#E7C986"/>
+    <rect x="130" y="-85" width="40" height="50" fill="#FFFDF8" stroke="#8C6239" stroke-width="1"/>
+
+    <!-- Sloping Terracotta Tiled Roof (Eaves) -->
+    <path d="M-245 -95 L-190 -165 L190 -165 L245 -95 Z" fill="url(#heritageRoof)" stroke="#521F14" stroke-width="1.5"/>
+    
+    <!-- Central Heritage Gable / Mukhavaram with ornate wood carvings -->
+    <polygon points="0,-195 -60,-130 60,-130" fill="url(#heritageRoof)" stroke="#521F14" stroke-width="1.5"/>
+    <polygon points="0,-185 -46,-135 46,-135" fill="#FAF7F2" stroke="#8C6D32" stroke-width="1"/>
+    <!-- Golden Temple Finials (Thazhikakkudam) on Roof Peaks -->
+    <circle cx="0,-198" r="4.5" fill="url(#goldTrim)" />
+    <circle cx="-190,-167" r="3.5" fill="url(#goldTrim)" />
+    <circle cx="190,-167" r="3.5" fill="url(#goldTrim)" />
+
+    <!-- Haldi & Sangeet Festive Marigold Garlands and Fairy Lights -->
+    <!-- Hanging Marigold Garlands -->
+    <path d="M-220 -90 Q-155 -70 -90 -90 Q-25 -70 40 -90 Q105 -70 170 -90 Q205 -75 220 -90" 
+          stroke="#F4A261" stroke-width="5" stroke-dasharray="6,4" fill="none"/>
+    <path d="M-220 -85 Q-155 -65 -90 -85 Q-25 -65 40 -85 Q105 -65 170 -85 Q205 -70 220 -85" 
+          stroke="#E88B97" stroke-width="3" stroke-dasharray="5,4" fill="none"/>
+
+    <!-- Warm Glowing Lanterns Hanging from Eaves -->
+    <g transform="translate(-155, -70)">
+      <line x1="0" y1="-20" x2="0" y2="0" stroke="#8C6D32" stroke-width="1"/>
+      <polygon points="0,0 -6,12 6,12" fill="#E7C986" stroke="#8C6D32" stroke-width="1"/>
+      <circle cx="0" cy="8" r="7" fill="#FFEBB8" opacity="0.8"/>
+    </g>
+    <g transform="translate(155, -70)">
+      <line x1="0" y1="-20" x2="0" y2="0" stroke="#8C6D32" stroke-width="1"/>
+      <polygon points="0,0 -6,12 6,12" fill="#E7C986" stroke="#8C6D32" stroke-width="1"/>
+      <circle cx="0" cy="8" r="7" fill="#FFEBB8" opacity="0.8"/>
+    </g>
+
+    <!-- Urli with Flowers at Front Steps -->
+    <ellipse cx="0" cy="24" rx="26" ry="7" fill="url(#goldTrim)"/>
+    <circle cx="-8" cy="24" r="2.5" fill="#E88B97"/>
+    <circle cx="0" cy="25" r="3" fill="#F4A261"/>
+    <circle cx="8" cy="24" r="2.5" fill="#E88B97"/>
+  </g>
+
+  <!-- Venue Badge Overlay -->
+  <rect x="20" y="20" width="230" height="42" rx="21" fill="rgba(250, 247, 242, 0.94)" stroke="#C5A059" stroke-width="1.2"/>
+  <text x="135" y="46" font-family="'Cormorant Garamond', serif" font-size="16" font-weight="700" fill="#1B3B2B" text-anchor="middle" letter-spacing="1.5">TAMARIND HERITAGE</text>
+</svg>

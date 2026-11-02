@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 320" width="600" height="320">
+  <defs>
+    <!-- Lotus Vibrant Pink Gradient -->
+    <linearGradient id="swanLotusPink" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#E93B6C" />
+      <stop offset="50%" stop-color="#F98CAE" />
+      <stop offset="100%" stop-color="#FFFFFF" />
+    </linearGradient>
+
+    <!-- Swan Feather Gradient -->
+    <linearGradient id="swanFeather" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="60%" stop-color="#FCF9F5" />
+      <stop offset="100%" stop-color="#EDE6DD" />
+    </linearGradient>
+
+    <!-- Pastel Green Water Gradient -->
+    <linearGradient id="swanWaterGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EBF4E9" />
+      <stop offset="50%" stop-color="#D5E6D3" />
+      <stop offset="100%" stop-color="#B4CEB1" />
+    </linearGradient>
+
+    <!-- Gold Accent Gradient -->
+    <linearGradient id="swanGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF3D4" />
+      <stop offset="40%" stop-color="#E7C986" />
+      <stop offset="70%" stop-color="#C5A059" />
+      <stop offset="100%" stop-color="#8C6D32" />
+    </linearGradient>
+
+    <!-- Ripple Gradient -->
+    <radialGradient id="waterRipple" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FAF7F2" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#DCE8DA" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#DCE8DA" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Water Surface Calm Ripples -->
+  <ellipse cx="300" cy="235" rx="270" ry="40" fill="url(#waterRipple)" />
+  <ellipse cx="300" cy="245" rx="210" ry="25" fill="none" stroke="#B4CEB1" stroke-width="1.2" stroke-dasharray="6,8" opacity="0.6"/>
+  <ellipse cx="300" cy="255" rx="150" ry="18" fill="none" stroke="url(#swanGold)" stroke-width="0.8" stroke-dasharray="3,5" opacity="0.5"/>
+
+  <!-- Left Swan (Lachlan) - Facing Right -->
+  <g id="left-swan" transform="translate(230, 200)">
+    <!-- Water Reflection Shadow -->
+    <ellipse cx="-45" cy="42" rx="60" ry="10" fill="#9BB896" opacity="0.3"/>
+    
+    <!-- Swan Body & Wing -->
+    <path d="M-110 32 C-105 10 -80 -10 -40 -12 C-10 -12 15 5 25 32 C5 44 -90 45 -110 32 Z" fill="url(#swanFeather)" stroke="#D8CABE" stroke-width="1"/>
+    
+    <!-- Wing Feathers Layer 1 -->
+    <path d="M-95 18 C-75 -5 -40 -8 -15 8 C-35 25 -75 26 -95 18 Z" fill="#FFFFFF" stroke="#E3EDE1" stroke-width="1"/>
+    <!-- Wing Feathers Layer 2 (Gold trimmed) -->
+    <path d="M-80 8 C-60 -12 -30 -14 -5 0 C-25 15 -60 18 -80 8 Z" fill="#FCFAF6" stroke="url(#swanGold)" stroke-width="1"/>
+
+    <!-- Slender Graceful S-Neck & Head -->
+    <path d="M15 25 C12 5 2 -25 -5 -50 C-12 -75 -5 -105 15 -115 C28 -120 38 -108 34 -95 C28 -75 16 -40 28 -5 C32 10 26 22 15 25 Z" fill="url(#swanFeather)" stroke="#D8CABE" stroke-width="1"/>
+    
+    <!-- Head & Eye -->
+    <circle cx="28" cy="-105" r="1.8" fill="#1B3B2B" />
+    <path d="M25 -106 Q28 -110 32 -106" stroke="#C5A059" stroke-width="0.8" fill="none"/>
+    
+    <!-- Beak with Gold Carving Accent -->
+    <path d="M34 -98 L48 -94 L35 -90 Z" fill="url(#swanGold)" />
+    <!-- Beak knob (Basal knob) -->
+    <ellipse cx="32" cy="-97" rx="3.5" ry="2.5" fill="#1B3B2B" />
+
+    <!-- Traditional Kerala Kasavu Garland on Swan Neck -->
+    <path d="M12 -45 Q22 -38 24 -46" stroke="url(#swanGold)" stroke-width="2" fill="none"/>
+    <circle cx="18" cy="-40" r="2.2" fill="#E88B97" />
+  </g>
+
+  <!-- Right Swan (Sandra) - Facing Left (Mirrored Contour) -->
+  <g id="right-swan" transform="translate(370, 200)">
+    <!-- Water Reflection Shadow -->
+    <ellipse cx="45" cy="42" rx="60" ry="10" fill="#9BB896" opacity="0.3"/>
+    
+    <!-- Swan Body & Wing -->
+    <path d="M110 32 C105 10 80 -10 40 -12 C10 -12 -15 5 -25 32 C-5 44 90 45 110 32 Z" fill="url(#swanFeather)" stroke="#D8CABE" stroke-width="1"/>
+    
+    <!-- Wing Feathers Layer 1 -->
+    <path d="M95 18 C75 -5 40 -8 15 8 C35 25 75 26 95 18 Z" fill="#FFFFFF" stroke="#E3EDE1" stroke-width="1"/>
+    <!-- Wing Feathers Layer 2 (Gold trimmed) -->
+    <path d="M80 8 C60 -12 30 -14 5 0 C25 15 60 18 80 8 Z" fill="#FCFAF6" stroke="url(#swanGold)" stroke-width="1"/>
+
+    <!-- Slender Graceful S-Neck & Head -->
+    <path d="M-15 25 C-12 5 -2 -25 5 -50 C12 -75 5 -105 -15 -115 C-28 -120 -38 -108 -34 -95 C-28 -75 -16 -40 -28 -5 C-32 10 -26 22 -15 25 Z" fill="url(#swanFeather)" stroke="#D8CABE" stroke-width="1"/>
+    
+    <!-- Head & Eye -->
+    <circle cx="-28" cy="-105" r="1.8" fill="#1B3B2B" />
+    <path d="M-25 -106 Q-28 -110 -32 -106" stroke="#C5A059" stroke-width="0.8" fill="none"/>
+    
+    <!-- Beak with Gold Carving Accent -->
+    <path d="M-34 -98 L-48 -94 L-35 -90 Z" fill="url(#swanGold)" />
+    <!-- Beak knob -->
+    <ellipse cx="-32" cy="-97" rx="3.5" ry="2.5" fill="#1B3B2B" />
+
+    <!-- Jasmine Floral Garland on Bride Swan Neck -->
+    <path d="M-12 -45 Q-22 -38 -24 -46" stroke="url(#swanGold)" stroke-width="2" fill="none"/>
+    <circle cx="-18" cy="-40" r="2.2" fill="#E88B97" />
+  </g>
+
+  <!-- Central Love Motif: Necks Meet & Form a Heart Silhouette -->
+  <!-- Floating Lotus in the center between the swans -->
+  <g id="center-lotus" transform="translate(300, 230)">
+    <!-- Base Pad -->
+    <ellipse cx="0" cy="18" rx="42" ry="9" fill="#B4CEB1" opacity="0.85"/>
+    <path d="M-35 18 Q0 12 35 18" stroke="url(#swanGold)" stroke-width="0.8" fill="none"/>
+
+    <!-- Lotus Petals -->
+    <path d="M0 16 C-22 16 -38 4 -40 -8 C-20 0 -10 10 0 16 Z" fill="#E88B97" opacity="0.85"/>
+    <path d="M0 16 C22 16 38 4 40 -8 C20 0 10 10 0 16 Z" fill="#E88B97" opacity="0.85"/>
+    
+    <path d="M0 16 C-18 8 -26 -12 -16 -28 C-8 -10 -4 6 0 16 Z" fill="url(#swanLotusPink)"/>
+    <path d="M0 16 C18 8 26 -12 16 -28 C8 -10 4 6 0 16 Z" fill="url(#swanLotusPink)"/>
+    
+    <path d="M0 16 C-8 0 -10 -32 0 -42 C10 -32 8 0 0 16 Z" fill="url(#swanLotusPink)"/>
+    
+    <!-- Stamen -->
+    <circle cx="0" cy="-6" r="4.5" fill="url(#swanGold)"/>
+    <circle cx="0" cy="-6" r="2" fill="#C46D77"/>
+  </g>
+
+  <!-- Flanking Pastel Pink Lotus Blooms & Pads -->
+  <!-- Left Pond Flower -->
+  <g transform="translate(90, 240) scale(0.7)">
+    <ellipse cx="0" cy="15" rx="40" ry="8" fill="#B4CEB1" opacity="0.8"/>
+    <path d="M0 12 C-15 4 -22 -10 -14 -24 C-6 -8 0 4 0 12 Z" fill="url(#swanLotusPink)"/>
+    <path d="M0 12 C15 4 22 -10 14 -24 C6 -8 0 4 0 12 Z" fill="url(#swanLotusPink)"/>
+    <path d="M0 12 C-6 0 -8 -26 0 -34 C8 -26 6 0 0 12 Z" fill="url(#swanLotusPink)"/>
+  </g>
+
+  <!-- Right Pond Flower -->
+  <g transform="translate(510, 240) scale(0.7)">
+    <ellipse cx="0" cy="15" rx="40" ry="8" fill="#B4CEB1" opacity="0.8"/>
+    <path d="M0 12 C-15 4 -22 -10 -14 -24 C-6 -8 0 4 0 12 Z" fill="url(#swanLotusPink)"/>
+    <path d="M0 12 C15 4 22 -10 14 -24 C6 -8 0 4 0 12 Z" fill="url(#swanLotusPink)"/>
+    <path d="M0 12 C-6 0 -8 -26 0 -34 C8 -26 6 0 0 12 Z" fill="url(#swanLotusPink)"/>
+  </g>
+
+  <!-- Golden Heart Outline Above Swans -->
+  <g transform="translate(300, 80)">
+    <path d="M0 12 C-16 -12 -36 -2 0 30 C36 -2 16 -12 0 12 Z" fill="#F7D6DC" opacity="0.65"/>
+    <path d="M0 10 C-14 -10 -30 0 0 26 C30 0 14 -10 0 10 Z" fill="none" stroke="url(#swanGold)" stroke-width="1.2" opacity="0.8"/>
+    <circle cx="0" cy="11" r="2.5" fill="#E88B97" />
+  </g>
+</svg>

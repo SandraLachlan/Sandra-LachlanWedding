@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="hotelSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF8EE" />
+      <stop offset="60%" stop-color="#FAF1E4" />
+      <stop offset="100%" stop-color="#EADDCB" />
+    </linearGradient>
+    <linearGradient id="hotelGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E7C986" />
+      <stop offset="50%" stop-color="#C5A059" />
+      <stop offset="100%" stop-color="#8C6D32" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="400" fill="url(#hotelSky)" />
+
+  <!-- Ground / Driveway -->
+  <rect y="260" width="600" height="140" fill="#E2D7C8" />
+  <path d="M0 290 Q300 270 600 290" stroke="#C5A059" stroke-width="1.5" stroke-dasharray="6,6" fill="none"/>
+
+  <!-- Hotel Ballroom & Grand Facade -->
+  <g id="hotel-facade" transform="translate(300, 240)">
+    <!-- Main Center Building Block -->
+    <rect x="-200" y="-140" width="400" height="150" fill="#FAF7F2" stroke="#8C6D32" stroke-width="1.5"/>
+    <rect x="-180" y="-120" width="360" height="120" fill="#FFFDF8" stroke="#D3C7B5" stroke-width="1"/>
+
+    <!-- Grand Entrance Portico / Canopy -->
+    <path d="M-90 10 L-90 -40 L90 -40 L90 10 Z" fill="#FAF7F2" stroke="#8C6D32" stroke-width="2"/>
+    <path d="M-110 -40 L0 -75 L110 -40 Z" fill="url(#hotelGold)" stroke="#8C6D32" stroke-width="1.5"/>
+    <!-- Grand Chandelier in Entrance Glow -->
+    <circle cx="0" cy="-10" r="14" fill="#FFEBB8" opacity="0.8"/>
+    <circle cx="0" cy="-10" r="24" fill="#FFEBB8" opacity="0.3"/>
+    
+    <!-- Warm Banquet Windows with Golden Lighting -->
+    <g fill="#FFEBB8" stroke="#C5A059" stroke-width="1">
+      <rect x="-160" y="-105" width="28" height="45" rx="3"/>
+      <rect x="-120" y="-105" width="28" height="45" rx="3"/>
+      <rect x="92" y="-105" width="28" height="45" rx="3"/>
+      <rect x="132" y="-105" width="28" height="45" rx="3"/>
+
+      <!-- Window upper tier -->
+      <rect x="-160" y="-45" width="28" height="45" rx="3"/>
+      <rect x="-120" y="-45" width="28" height="45" rx="3"/>
+      <rect x="92" y="-45" width="28" height="45" rx="3"/>
+      <rect x="132" y="-45" width="28" height="45" rx="3"/>
+    </g>
+
+    <!-- Haldi / Sangeet Festive Marigold Garlands draping the entrance -->
+    <path d="M-110 -40 Q0 -25 110 -40" stroke="#FFD166" stroke-width="4" stroke-dasharray="6,4" fill="none"/>
+    <path d="M-110 -35 Q0 -20 110 -35" stroke="#E88B97" stroke-width="3" stroke-dasharray="5,4" fill="none"/>
+
+    <!-- Flanking Tropical Palms in Planters -->
+    <g transform="translate(-140, 20)">
+      <rect x="-12" y="0" width="24" height="24" fill="#8C6D32" rx="2"/>
+      <path d="M0 0 Q-20 -30 -35 -40" stroke="#3D6853" stroke-width="2.5" fill="none"/>
+      <path d="M0 0 Q0 -35 0 -48" stroke="#3D6853" stroke-width="2.5" fill="none"/>
+      <path d="M0 0 Q20 -30 35 -40" stroke="#3D6853" stroke-width="2.5" fill="none"/>
+    </g>
+    <g transform="translate(140, 20)">
+      <rect x="-12" y="0" width="24" height="24" fill="#8C6D32" rx="2"/>
+      <path d="M0 0 Q-20 -30 -35 -40" stroke="#3D6853" stroke-width="2.5" fill="none"/>
+      <path d="M0 0 Q0 -35 0 -48" stroke="#3D6853" stroke-width="2.5" fill="none"/>
+      <path d="M0 0 Q20 -30 35 -40" stroke="#3D6853" stroke-width="2.5" fill="none"/>
+    </g>
+  </g>
+
+  <!-- Venue Badge Overlay -->
+  <rect x="20" y="20" width="260" height="42" rx="21" fill="rgba(250, 247, 242, 0.9)" stroke="#C5A059" stroke-width="1"/>
+  <text x="150" y="46" font-family="'Cormorant Garamond', serif" font-size="16" font-weight="700" fill="#1B3B2B" text-anchor="middle" letter-spacing="1">QUALITY AIRPORT HOTEL</text>
+</svg>

@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" width="600" height="750">
+  <defs>
+    <linearGradient id="bgAttire" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FAF7F2" />
+      <stop offset="100%" stop-color="#F2ECE4" />
+    </linearGradient>
+    <linearGradient id="goldKasavu" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8C6D32" />
+      <stop offset="30%" stop-color="#E7C986" />
+      <stop offset="70%" stop-color="#C5A059" />
+      <stop offset="100%" stop-color="#6F531B" />
+    </linearGradient>
+    <linearGradient id="silkCream" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="50%" stop-color="#FCF9F2" />
+      <stop offset="100%" stop-color="#EDE4D5" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="750" fill="url(#bgAttire)" />
+  
+  <!-- Outer Gold Rim -->
+  <rect x="25" y="25" width="550" height="700" rx="16" fill="none" stroke="url(#goldKasavu)" stroke-width="2" />
+  <rect x="35" y="35" width="530" height="680" rx="12" fill="none" stroke="url(#goldKasavu)" stroke-width="0.8" stroke-dasharray="4,4" opacity="0.6"/>
+
+  <!-- Floral Garland Banner Header -->
+  <g transform="translate(300, 75)">
+    <circle cx="0" cy="0" r="28" fill="#F7D6DC" opacity="0.5"/>
+    <path d="M0 -15 C-12 0 -12 12 0 18 C12 12 12 0 0 -15 Z" fill="#E88B97" />
+    <circle cx="0" cy="2" r="3" fill="#C5A059" />
+    <path d="M-60 0 Q-30 -10 0 0 Q30 -10 60 0" stroke="url(#goldKasavu)" stroke-width="1.5" fill="none"/>
+  </g>
+
+  <!-- Kasavu Saree & Traditional Attire Drapes -->
+  <g id="attire-illustration" transform="translate(300, 360)">
+    <!-- Silk Fabric folds (Cream / Off-white Kasavu) -->
+    <path d="M-140 180 L-100 -120 C-60 -150 60 -150 100 -120 L140 180 C80 200 -80 200 -140 180 Z" fill="url(#silkCream)" stroke="#D8CABE" stroke-width="1"/>
+    
+    <!-- Kasavu Gold Zari Borders (Iconic Kerala Gold Border) -->
+    <path d="M-100 -120 L-140 180 L-110 186 L-80 -115 Z" fill="url(#goldKasavu)" />
+    <!-- Intricate Kasavu temple weave marks on the gold border -->
+    <path d="M-92 -90 L-86 -90 L-89 -96 Z" fill="#FFFFFF" opacity="0.75"/>
+    <path d="M-96 -60 L-90 -60 L-93 -66 Z" fill="#FFFFFF" opacity="0.75"/>
+    <path d="M-101 -30 L-95 -30 L-98 -36 Z" fill="#FFFFFF" opacity="0.75"/>
+    <path d="M-107 0 L-101 0 L-104 -6 Z" fill="#FFFFFF" opacity="0.75"/>
+    <path d="M-113 30 L-107 30 L-110 24 Z" fill="#FFFFFF" opacity="0.75"/>
+    <path d="M-119 60 L-113 60 L-116 54 Z" fill="#FFFFFF" opacity="0.75"/>
+    <path d="M-125 90 L-119 90 L-122 84 Z" fill="#FFFFFF" opacity="0.75"/>
+    <path d="M-131 120 L-125 120 L-128 114 Z" fill="#FFFFFF" opacity="0.75"/>
+
+    <!-- Pleats / Neriyathu Pallu -->
+    <path d="M-60 -110 C-10 -70 40 -40 90 -20 L80 180 C30 185 -20 180 -60 170 Z" fill="#FCFBF7" opacity="0.9"/>
+    <path d="M40 -40 L90 -20 L80 180 L50 180 Z" fill="url(#goldKasavu)" opacity="0.9"/>
+
+    <!-- Traditional Kerala Gold Jewellery (Mulla Mottu Maala / Kasu Mala necklace) -->
+    <path d="M-50 -120 C-40 -40 40 -40 50 -120" stroke="url(#goldKasavu)" stroke-width="4.5" fill="none"/>
+    <g fill="url(#goldKasavu)">
+      <circle cx="-35" cy="-70" r="4.5" /><circle cx="-20" cy="-55" r="4.5" />
+      <circle cx="0" cy="-48" r="6" /><circle cx="20" cy="-55" r="4.5" />
+      <circle cx="35" cy="-70" r="4.5" />
+    </g>
+    <!-- Center Lakshmi / Lotus Pendant -->
+    <circle cx="0" cy="-40" r="8" fill="url(#goldKasavu)" />
+    <circle cx="0" cy="-40" r="4" fill="#C46D77" />
+
+    <!-- Jasmine Hair Strand Garland (Mullappoo) draped gracefully -->
+    <g fill="#FFFDF8" stroke="#E3EDE1" stroke-width="0.8">
+      <ellipse cx="-70" cy="-140" rx="8" ry="6" />
+      <ellipse cx="-60" cy="-155" rx="7" ry="5" />
+      <ellipse cx="-45" cy="-165" rx="8" ry="6" />
+      <ellipse cx="-25" cy="-170" rx="7" ry="6" />
+      <ellipse cx="-5" cy="-172" rx="8" ry="6" />
+      <ellipse cx="15" cy="-170" rx="7" ry="6" />
+      <ellipse cx="35" cy="-165" rx="8" ry="6" />
+      <ellipse cx="50" cy="-155" rx="7" ry="5" />
+      <ellipse cx="60" cy="-140" rx="8" ry="6" />
+    </g>
+    <g fill="#E88B97">
+      <circle cx="-60" cy="-155" r="2" /><circle cx="-25" cy="-170" r="2" />
+      <circle cx="15" cy="-170" r="2" /><circle cx="50" cy="-155" r="2" />
+    </g>
+  </g>
+
+  <!-- Typography Banner -->
+  <g transform="translate(300, 630)">
+    <text x="0" y="0" font-family="'Cormorant Garamond', serif" font-size="24" font-weight="600" fill="#1B3B2B" text-anchor="middle" letter-spacing="2">TRADITIONAL KASAVU &amp; SILKS</text>
+    <text x="0" y="24" font-family="'Montserrat', sans-serif" font-size="11" font-weight="500" fill="#8C6D32" text-anchor="middle" letter-spacing="3">HERITAGE ELEGANCE • HANDWOVEN GOLD</text>
+  </g>
+</svg>

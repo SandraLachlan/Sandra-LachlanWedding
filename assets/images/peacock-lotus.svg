@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <!-- Vibrant Lotus Pink Gradient -->
+    <linearGradient id="lotusPinkGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#E93B6C" />
+      <stop offset="50%" stop-color="#F98CAE" />
+      <stop offset="100%" stop-color="#FFFFFF" />
+    </linearGradient>
+
+    <!-- Deep Vibrant Lotus Rose Gradient -->
+    <linearGradient id="lotusRoseDeep" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#C2185B" />
+      <stop offset="55%" stop-color="#E93B6C" />
+      <stop offset="100%" stop-color="#FFD6E3" />
+    </linearGradient>
+
+    <!-- Pastel Green Leaf Gradient -->
+    <linearGradient id="pastelGreenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4E6D2" />
+      <stop offset="60%" stop-color="#B4CEB1" />
+      <stop offset="100%" stop-color="#7E9E7A" />
+    </linearGradient>
+
+    <!-- Peacock Body Gradient (Forest & Mint Elegance) -->
+    <linearGradient id="peacockBodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2E533F" />
+      <stop offset="50%" stop-color="#1B3B2B" />
+      <stop offset="100%" stop-color="#0E2319" />
+    </linearGradient>
+
+    <!-- Antique Gold Gradient -->
+    <linearGradient id="goldPeacock" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF3D4" />
+      <stop offset="40%" stop-color="#E7C986" />
+      <stop offset="70%" stop-color="#C5A059" />
+      <stop offset="100%" stop-color="#8C6D32" />
+    </linearGradient>
+
+    <!-- Soft Halo Glow -->
+    <radialGradient id="softGlowAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FCECEF" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#EBF4E9" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FAF7F2" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Aura Background Glow -->
+  <circle cx="250" cy="250" r="220" fill="url(#softGlowAura)" />
+
+  <!-- Botanical Arch / Wreath with Lotus Leaves in Pastel Green -->
+  <g id="botanical-wreath">
+    <!-- Outer delicate gold circular vine -->
+    <circle cx="250" cy="250" r="210" fill="none" stroke="url(#goldPeacock)" stroke-width="1.2" stroke-dasharray="3,3" opacity="0.6"/>
+    <circle cx="250" cy="250" r="218" fill="none" stroke="url(#goldPeacock)" stroke-width="2" opacity="0.4"/>
+
+    <!-- Arching Lotus Leaves (Pastel Green) -->
+    <!-- Left Leaves -->
+    <path d="M110 380 C80 320 70 240 100 170 C110 200 120 250 110 380 Z" fill="url(#pastelGreenGrad)" opacity="0.75"/>
+    <path d="M70 270 C40 220 50 160 90 120 C95 160 90 210 70 270 Z" fill="url(#pastelGreenGrad)" opacity="0.6"/>
+    <!-- Right Leaves -->
+    <path d="M390 380 C420 320 430 240 400 170 C390 200 380 250 390 380 Z" fill="url(#pastelGreenGrad)" opacity="0.75"/>
+    <path d="M430 270 C460 220 450 160 410 120 C405 160 410 210 430 270 Z" fill="url(#pastelGreenGrad)" opacity="0.6"/>
+  </g>
+
+  <!-- Flowing Peacock Train / Tail Feathers (Left arching downward) -->
+  <g id="peacock-tail">
+    <!-- Feather strands draping gracefully -->
+    <path d="M230 270 Q170 320 120 420 Q160 410 220 330 Z" fill="#9BB896" opacity="0.5"/>
+    <path d="M220 280 Q150 350 90 440 Q140 430 210 340 Z" fill="#7E9E7A" opacity="0.6"/>
+    <path d="M240 290 Q200 370 170 460 Q210 430 250 340 Z" fill="#B4CEB1" opacity="0.5"/>
+    
+    <!-- Peacock Eyespots (Ocelli) in Gold & Pastel Pink -->
+    <!-- Eyespot 1 -->
+    <g transform="translate(130, 415) scale(0.9)">
+      <ellipse cx="0" cy="0" rx="16" ry="22" fill="url(#goldPeacock)" transform="rotate(-30)"/>
+      <ellipse cx="0" cy="0" rx="10" ry="14" fill="#B4CEB1" transform="rotate(-30)"/>
+      <circle cx="0" cy="0" r="6" fill="#E88B97" />
+      <circle cx="0" cy="0" r="2.5" fill="#FFFFFF" />
+    </g>
+    <!-- Eyespot 2 -->
+    <g transform="translate(100, 435) scale(0.85)">
+      <ellipse cx="0" cy="0" rx="16" ry="22" fill="url(#goldPeacock)" transform="rotate(-40)"/>
+      <ellipse cx="0" cy="0" rx="10" ry="14" fill="#B4CEB1" transform="rotate(-40)"/>
+      <circle cx="0" cy="0" r="6" fill="#E88B97" />
+      <circle cx="0" cy="0" r="2.5" fill="#FFFFFF" />
+    </g>
+    <!-- Eyespot 3 -->
+    <g transform="translate(170, 450) scale(0.85)">
+      <ellipse cx="0" cy="0" rx="16" ry="22" fill="url(#goldPeacock)" transform="rotate(-15)"/>
+      <ellipse cx="0" cy="0" rx="10" ry="14" fill="#B4CEB1" transform="rotate(-15)"/>
+      <circle cx="0" cy="0" r="6" fill="#E88B97" />
+      <circle cx="0" cy="0" r="2.5" fill="#FFFFFF" />
+    </g>
+    <!-- Eyespot 4 -->
+    <g transform="translate(180, 370) scale(0.75)">
+      <ellipse cx="0" cy="0" rx="16" ry="22" fill="url(#goldPeacock)" transform="rotate(-20)"/>
+      <ellipse cx="0" cy="0" rx="10" ry="14" fill="#B4CEB1" transform="rotate(-20)"/>
+      <circle cx="0" cy="0" r="6" fill="#E88B97" />
+    </g>
+  </g>
+
+  <!-- Regal Peacock Body (Mayil) -->
+  <g id="peacock-body" transform="translate(240, 160)">
+    <!-- Crest / Crown Feathers (Kondai) -->
+    <g stroke="url(#goldPeacock)" stroke-width="1.5" fill="none">
+      <line x1="3" y1="-2" x2="10" y2="-28" />
+      <line x1="0" y1="-2" x2="0" y2="-32" />
+      <line x1="-3" y1="-2" x2="-10" y2="-28" />
+    </g>
+    <circle cx="10" cy="-28" r="3.5" fill="#E88B97" stroke="url(#goldPeacock)" stroke-width="0.8"/>
+    <circle cx="0" cy="-32" r="4" fill="#E88B97" stroke="url(#goldPeacock)" stroke-width="0.8"/>
+    <circle cx="-10" cy="-28" r="3.5" fill="#E88B97" stroke="url(#goldPeacock)" stroke-width="0.8"/>
+
+    <!-- Slender Graceful S-Curved Neck & Head -->
+    <path d="M-8 8 C-12 -6 2 -18 10 -12 C16 -6 14 6 8 18 C2 28 6 45 12 65 C18 85 18 105 10 125 C-4 140 -20 145 -35 140 C-25 115 -18 80 -10 50 C-6 35 -4 20 -8 8 Z" fill="url(#peacockBodyGrad)" />
+    
+    <!-- Delicate Golden Beak -->
+    <polygon points="12,-11 25,-8 14,-5" fill="url(#goldPeacock)" />
+    
+    <!-- Eye with White-Lined Kohl Feather Border -->
+    <ellipse cx="8" cy="-10" rx="2.5" ry="1.8" fill="#FFFDF8" />
+    <circle cx="8" cy="-10" r="1.2" fill="#12281D" />
+
+    <!-- Breast & Wing Feathers (Laced in Gold and Pastel Green) -->
+    <path d="M10 120 C25 135 30 160 20 190 C-10 210 -40 200 -55 170 C-50 140 -20 120 10 120 Z" fill="#1B3B2B" stroke="url(#goldPeacock)" stroke-width="1.2"/>
+    <!-- Wing Scales / Feather scallops -->
+    <path d="M-10 145 Q0 155 10 145" fill="none" stroke="#B4CEB1" stroke-width="1.5"/>
+    <path d="M-25 160 Q-15 172 -5 160 Q5 172 15 160" fill="none" stroke="#B4CEB1" stroke-width="1.5"/>
+    <path d="M-35 175 Q-20 188 -10 175 Q5 188 15 175" fill="none" stroke="url(#goldPeacock)" stroke-width="1.5"/>
+    
+    <!-- Traditional Temple Kasavu Necklace Collar -->
+    <path d="M-1 45 C4 52 10 52 14 46" stroke="url(#goldPeacock)" stroke-width="2.5" fill="none"/>
+    <circle cx="6" cy="51" r="2.5" fill="#E88B97" />
+  </g>
+
+  <!-- Blooming Pastel Pink Lotus Flowers at Base & Perch -->
+  <g id="lotus-cluster" transform="translate(290, 360)">
+    <!-- Main Center Lotus -->
+    <!-- Base Pad / Leaf -->
+    <ellipse cx="0" cy="50" rx="90" ry="18" fill="url(#pastelGreenGrad)" opacity="0.8"/>
+    <path d="M-80 50 Q0 35 80 50" stroke="url(#goldPeacock)" stroke-width="1" fill="none" opacity="0.6"/>
+
+    <!-- Lotus Outer Low Petals -->
+    <path d="M0 45 C-40 45 -70 25 -75 0 C-40 10 -20 30 0 45 Z" fill="url(#lotusRoseDeep)" opacity="0.9"/>
+    <path d="M0 45 C40 45 70 25 75 0 C40 10 20 30 0 45 Z" fill="url(#lotusRoseDeep)" opacity="0.9"/>
+    
+    <!-- Lotus Mid Petals -->
+    <path d="M0 45 C-35 30 -50 0 -35 -30 C-20 0 -10 25 0 45 Z" fill="url(#lotusPinkGrad)"/>
+    <path d="M0 45 C35 30 50 0 35 -30 C20 0 10 25 0 45 Z" fill="url(#lotusPinkGrad)"/>
+    
+    <!-- Center Upright Lotus Petals -->
+    <path d="M0 45 C-18 20 -20 -35 0 -55 C20 -35 18 20 0 45 Z" fill="url(#lotusPinkGrad)"/>
+    
+    <!-- Golden Lotus Core & Stamen -->
+    <circle cx="0" cy="18" r="8" fill="url(#goldPeacock)"/>
+    <circle cx="0" cy="18" r="3.5" fill="#C46D77"/>
+
+    <!-- Left Smaller Lotus Bud -->
+    <g transform="translate(-110, 20) scale(0.65) rotate(-25)">
+      <path d="M0 30 C-20 15 -25 -20 0 -35 C25 -20 20 15 0 30 Z" fill="url(#lotusPinkGrad)"/>
+      <path d="M-10 25 C-25 5 -15 -25 0 -35" fill="none" stroke="#C46D77" stroke-width="1"/>
+      <path d="M0 30 L0 60" stroke="#7E9E7A" stroke-width="4"/>
+    </g>
+
+    <!-- Right Jasmine & Lotus Blossom -->
+    <g transform="translate(95, 15) scale(0.7) rotate(20)">
+      <path d="M0 30 C-20 15 -25 -20 0 -35 C25 -20 20 15 0 30 Z" fill="url(#lotusPinkGrad)"/>
+      <path d="M0 30 L0 60" stroke="#7E9E7A" stroke-width="4"/>
+    </g>
+  </g>
+
+  <!-- Floating Jasmine Flower Petals in Breeze -->
+  <g id="floating-buds" fill="#FFFDF8" stroke="#F7D6DC" stroke-width="0.8">
+    <ellipse cx="140" cy="130" rx="8" ry="5" transform="rotate(30 140 130)"/>
+    <ellipse cx="360" cy="140" rx="7" ry="4" transform="rotate(-20 360 140)"/>
+    <ellipse cx="380" cy="220" rx="9" ry="5" transform="rotate(15 380 220)"/>
+    <ellipse cx="110" cy="220" rx="7" ry="4" transform="rotate(-35 110 220)"/>
+    <!-- Gold stamen centers -->
+    <circle cx="140" cy="130" r="1.5" fill="#C5A059" />
+    <circle cx="360" cy="140" r="1.5" fill="#C5A059" />
+  </g>
+</svg>

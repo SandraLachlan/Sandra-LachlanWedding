@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 60" width="600" height="60">
+  <defs>
+    <linearGradient id="goldString" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C5A059" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#E7C986" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#C5A059" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <!-- Jasmine petal gradient -->
+    <radialGradient id="jasminePetal" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="70%" stop-color="#FFFDF7" />
+      <stop offset="100%" stop-color="#F2EBD9" />
+    </radialGradient>
+  </defs>
+
+  <!-- Golden thread swag / curve -->
+  <path d="M0 25 Q150 42 300 35 Q450 42 600 25" fill="none" stroke="url(#goldString)" stroke-width="1.8" />
+  <path d="M0 28 Q150 45 300 38 Q450 45 600 28" fill="none" stroke="url(#goldString)" stroke-width="1" stroke-dasharray="2,4" />
+
+  <!-- Repeated Jasmine Bud Cluster Components -->
+  <g id="blossoms">
+    <!-- Blossom 1 (x=60) -->
+    <g transform="translate(60, 27)">
+      <circle cx="0" cy="0" r="6" fill="#9BB896" opacity="0.6"/>
+      <path d="M0 -7 C-3 -3 -3 3 0 7 C3 3 3 -3 0 -7 Z" fill="url(#jasminePetal)" />
+      <path d="M-7 0 C-3 -3 3 -3 7 0 C3 3 -3 3 -7 0 Z" fill="url(#jasminePetal)" />
+      <path d="M-5 -5 C-1 -4 4 -1 5 5 C1 4 -4 1 -5 -5 Z" fill="url(#jasminePetal)" />
+      <path d="M5 -5 C4 1 1 4 -5 5 C-4 -1 -1 -4 5 -5 Z" fill="url(#jasminePetal)" />
+      <circle cx="0" cy="0" r="1.5" fill="#E93B6C" />
+    </g>
+
+    <!-- Blossom 2 (x=120) -->
+    <g transform="translate(120, 31)">
+      <circle cx="0" cy="0" r="6" fill="#9BB896" opacity="0.6"/>
+      <path d="M0 -7 C-3 -3 -3 3 0 7 C3 3 3 -3 0 -7 Z" fill="url(#jasminePetal)" />
+      <path d="M-7 0 C-3 -3 3 -3 7 0 C3 3 -3 3 -7 0 Z" fill="url(#jasminePetal)" />
+      <circle cx="0" cy="0" r="1.5" fill="#C5A059" />
+    </g>
+
+    <!-- Blossom 3 (x=180) -->
+    <g transform="translate(180, 34)">
+      <circle cx="0" cy="0" r="6" fill="#9BB896" opacity="0.6"/>
+      <path d="M0 -8 C-4 -3 -4 3 0 8 C4 3 4 -3 0 -8 Z" fill="url(#jasminePetal)" />
+      <path d="M-8 0 C-3 -4 3 -4 8 0 C3 4 -3 4 -8 0 Z" fill="url(#jasminePetal)" />
+      <circle cx="0" cy="0" r="1.8" fill="#E93B6C" />
+    </g>
+
+    <!-- Blossom 4 (x=240) -->
+    <g transform="translate(240, 36)">
+      <circle cx="0" cy="0" r="6" fill="#9BB896" opacity="0.6"/>
+      <path d="M0 -7 C-3 -3 -3 3 0 7 C3 3 3 -3 0 -7 Z" fill="url(#jasminePetal)" />
+      <path d="M-7 0 C-3 -3 3 -3 7 0 C3 3 -3 3 -7 0 Z" fill="url(#jasminePetal)" />
+      <circle cx="0" cy="0" r="1.5" fill="#C5A059" />
+    </g>
+
+    <!-- Center Centerpiece Blossom with Lotus Accent (x=300) -->
+    <g transform="translate(300, 35)">
+      <!-- Gold halo ring -->
+      <circle cx="0" cy="0" r="12" fill="none" stroke="#C5A059" stroke-width="0.8" stroke-dasharray="2,2"/>
+      <!-- Pink lotus bud hanging -->
+      <path d="M0 12 C-5 6 -6 2 0 -2 C6 2 5 6 0 12 Z" fill="#E93B6C" />
+      <path d="M-3 10 C-6 6 -4 2 0 0" fill="none" stroke="#C46D77" stroke-width="0.7"/>
+      <path d="M3 10 C6 6 4 2 0 0" fill="none" stroke="#C46D77" stroke-width="0.7"/>
+      <!-- Top Jasmine rosette -->
+      <circle cx="0" cy="-2" r="7" fill="#9BB896" opacity="0.6"/>
+      <path d="M0 -9 C-4 -4 -4 4 0 9 C4 4 4 -4 0 -9 Z" fill="url(#jasminePetal)" />
+      <path d="M-9 0 C-4 -4 4 -4 9 0 C4 4 -4 4 -9 0 Z" fill="url(#jasminePetal)" />
+      <circle cx="0" cy="-2" r="2" fill="#C5A059" />
+    </g>
+
+    <!-- Blossom 6 (x=360) -->
+    <g transform="translate(360, 36)">
+      <circle cx="0" cy="0" r="6" fill="#9BB896" opacity="0.6"/>
+      <path d="M0 -7 C-3 -3 -3 3 0 7 C3 3 3 -3 0 -7 Z" fill="url(#jasminePetal)" />
+      <path d="M-7 0 C-3 -3 3 -3 7 0 C3 3 -3 3 -7 0 Z" fill="url(#jasminePetal)" />
+      <circle cx="0" cy="0" r="1.5" fill="#C5A059" />
+    </g>
+
+    <!-- Blossom 7 (x=420) -->
+    <g transform="translate(420, 34)">
+      <circle cx="0" cy="0" r="6" fill="#9BB896" opacity="0.6"/>
+      <path d="M0 -8 C-4 -3 -4 3 0 8 C4 3 4 -3 0 -8 Z" fill="url(#jasminePetal)" />
+      <path d="M-8 0 C-3 -4 3 -4 8 0 C3 4 -3 4 -8 0 Z" fill="url(#jasminePetal)" />
+      <circle cx="0" cy="0" r="1.8" fill="#E93B6C" />
+    </g>
+
+    <!-- Blossom 8 (x=480) -->
+    <g transform="translate(480, 31)">
+      <circle cx="0" cy="0" r="6" fill="#9BB896" opacity="0.6"/>
+      <path d="M0 -7 C-3 -3 -3 3 0 7 C3 3 3 -3 0 -7 Z" fill="url(#jasminePetal)" />
+      <path d="M-7 0 C-3 -3 3 -3 7 0 C3 3 -3 3 -7 0 Z" fill="url(#jasminePetal)" />
+      <circle cx="0" cy="0" r="1.5" fill="#C5A059" />
+    </g>
+
+    <!-- Blossom 9 (x=540) -->
+    <g transform="translate(540, 27)">
+      <circle cx="0" cy="0" r="6" fill="#9BB896" opacity="0.6"/>
+      <path d="M0 -7 C-3 -3 -3 3 0 7 C3 3 3 -3 0 -7 Z" fill="url(#jasminePetal)" />
+      <path d="M-7 0 C-3 -3 3 -3 7 0 C3 3 -3 3 -7 0 Z" fill="url(#jasminePetal)" />
+      <circle cx="0" cy="0" r="1.5" fill="#E93B6C" />
+    </g>
+  </g>
+</svg>

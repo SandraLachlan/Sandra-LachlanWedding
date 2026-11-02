@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandra &amp; Lachlan — Wedding Celebration | February 2027</title>
+  
+  <!-- Meta description for social sharing and search -->
+  <meta name="description" content="Wedding celebration invitation for Sandra Balan and Lachlan James McLean. February 2027 in God's Own Country, Kerala, India.">
+  <meta property="og:title" content="Sandra &amp; Lachlan — Wedding Celebration">
+  <meta property="og:description" content="Join us to celebrate the union of Sandra Balan and Lachlan James McLean in February 2027, Kerala, India.">
+  <meta property="og:type" content="website">
+
+  <!-- Cache Prevention to ensure immediate updates -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Google Fonts: Cormorant Garamond (Regal Serif), Great Vibes (Calligraphy), Plus Jakarta Sans (Clean Modern Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css?v=6">
+</head>
+<body>
+
+  <!-- Floating Falling Floral Petals Canvas -->
+  <canvas id="petal-canvas" aria-hidden="true"></canvas>
+
+  <!-- ========================================================= -->
+  <!-- 1. ANIMATED OPENING INVITATION COVER (Full Screen Modal)   -->
+  <!-- ========================================================= -->
+  <div id="invitation-cover" class="invitation-cover" role="dialog" aria-modal="true" aria-label="Wedding Invitation Envelope">
+    <div class="cover-backdrop"></div>
+    
+    <div class="cover-card">
+      <!-- Traditional Gold Ornamental Corners -->
+      <img src="assets/images/ornamental-corner.svg" alt="" class="corner-filigree corner-top-left" aria-hidden="true">
+      <img src="assets/images/ornamental-corner.svg" alt="" class="corner-filigree corner-top-right" aria-hidden="true">
+      <img src="assets/images/ornamental-corner.svg" alt="" class="corner-filigree corner-bottom-left" aria-hidden="true">
+      <img src="assets/images/ornamental-corner.svg" alt="" class="corner-filigree corner-bottom-right" aria-hidden="true">
+
+      <!-- Cover Content -->
+      <div class="cover-inner">
+        <!-- Auspicious Invocation -->
+        <div class="cover-auspicious">
+          <span class="sanskrit-blessing">॥ ॐ श्री गणेशाय नमः ॥</span>
+          <span class="cover-subtitle">Together with our families</span>
+        </div>
+
+        <!-- Royal Peacock & Pastel Pink Lotus Motif -->
+        <div class="cover-peacock-wrap">
+          <img src="assets/images/peacock-lotus.svg" alt="Royal Indian Peacock with Pastel Pink and Green Lotuses" class="cover-peacock">
+        </div>
+
+        <!-- Couple Names -->
+        <div class="cover-names-wrap">
+          <h1 class="cover-names">
+            <span class="cover-name bride">Sandra Balan</span>
+            <span class="cover-ampersand">&amp;</span>
+            <span class="cover-name groom">Lachlan James McLean</span>
+          </h1>
+        </div>
+
+        <div class="cover-divider">
+          <span class="divider-line"></span>
+          <span class="divider-gem">❖</span>
+          <span class="divider-line"></span>
+        </div>
+
+        <!-- Invitation Invitation Statement -->
+        <p class="cover-request">
+          Request the pleasure of your company<br>
+          as we celebrate our love and exchange sacred vows
+        </p>
+
+        <!-- Wedding Date & Destination -->
+        <div class="cover-date-badge">
+          <span class="date-month">February 2027</span>
+          <span class="date-dot">•</span>
+          <span class="date-location">God's Own Country, Kerala</span>
+        </div>
+
+        <!-- Open Invitation CTA Button -->
+        <button id="btn-open-invitation" class="btn-open-invitation" aria-label="Open wedding invitation and enter website">
+          <span class="btn-shine"></span>
+          <span class="btn-icon">🪷</span>
+          <span class="btn-text">Open Our Invitation</span>
+        </button>
+
+        <p class="cover-note">Click to reveal the celebrations &amp; music</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ========================================================= -->
+  <!-- 2. STICKY TOP NAVIGATION BAR                              -->
+  <!-- ========================================================= -->
+  <header id="site-header" class="site-header">
+    <div class="header-container">
+      <a href="#welcome" class="nav-monogram" aria-label="Sandra and Lachlan Home">
+        <span class="monogram-letter">S</span>
+        <span class="monogram-amp">&amp;</span>
+        <span class="monogram-letter">L</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#welcome" class="nav-link">Our Invitation</a></li>
+          <li><a href="#story" class="nav-link">Our Story</a></li>
+          <li><a href="#celebrations" class="nav-link">Celebrations</a></li>
+          <li><a href="#venues" class="nav-link">Venues</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#rsvp" class="nav-link nav-link-rsvp">RSVP</a></li>
+          <li><a href="#faq" class="nav-link">Q&amp;A</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions: Music Player & Mobile Menu Button -->
+      <div class="nav-actions">
+        <!-- Floating Music Player Widget Button in Navbar -->
+        <button id="nav-music-toggle" class="nav-music-btn" aria-label="Toggle background music" title="Background Music">
+          <span class="music-disc" aria-hidden="true">
+            <span class="disc-bars">
+              <span class="bar bar-1"></span>
+              <span class="bar bar-2"></span>
+              <span class="bar bar-3"></span>
+            </span>
+          </span>
+          <span class="music-label">Music</span>
+        </button>
+
+        <!-- Re-open Invitation Card Button -->
+        <button id="btn-view-card" class="btn-view-card" aria-label="View opening invitation card again" title="View Invitation Cover">
+          <span>💌</span>
+        </button>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+    <div class="drawer-header">
+      <div class="drawer-title">Sandra &amp; Lachlan</div>
+      <button id="mobile-menu-close" class="mobile-close-btn" aria-label="Close menu">&times;</button>
+    </div>
+    <nav class="mobile-nav" aria-label="Mobile Navigation">
+      <ul class="mobile-nav-list">
+        <li><a href="#welcome" class="mobile-nav-link">Our Invitation</a></li>
+        <li><a href="#story" class="mobile-nav-link">Our Story</a></li>
+        <li><a href="#celebrations" class="mobile-nav-link">Wedding Celebrations</a></li>
+        <li><a href="#venues" class="mobile-nav-link">Venues &amp; Directions</a></li>
+        <li><a href="#gallery" class="mobile-nav-link">Photo Gallery</a></li>
+        <li><a href="#rsvp" class="mobile-nav-link mobile-nav-rsvp">RSVP Online</a></li>
+        <li><a href="#faq" class="mobile-nav-link">Frequently Asked Questions</a></li>
+      </ul>
+    </nav>
+    <div class="drawer-footer">
+      <p>February 2027 • Kerala, India</p>
+    </div>
+  </div>
+  <div id="drawer-backdrop" class="drawer-backdrop"></div>
+
+
+  <!-- ========================================================= -->
+  <!-- 3. FLOATING MUSIC CONTROLLER (Desktop & Mobile)           -->
+  <!-- ========================================================= -->
+  <div id="floating-music-player" class="floating-music-player" role="region" aria-label="Audio Player">
+    <div class="player-pill">
+      <!-- Music play/pause button -->
+      <button id="btn-play-pause" class="player-btn btn-play" aria-label="Play background music" title="Play / Pause Music">
+        <svg class="icon-play" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+          <polygon points="5 3 19 12 5 21 5 3"></polygon>
+        </svg>
+        <svg class="icon-pause" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" style="display:none;">
+          <rect x="6" y="4" width="4" height="16"></rect>
+          <rect x="14" y="4" width="4" height="16"></rect>
+        </svg>
+      </button>
+
+      <!-- Track Information -->
+      <div class="player-info">
+        <span class="player-track">Wedding Melody</span>
+        <span id="player-status" class="player-sub">Click to play</span>
+      </div>
+
+      <!-- Mute / Unmute Button -->
+      <button id="btn-mute" class="player-btn btn-mute" aria-label="Mute or unmute music" title="Mute / Unmute">
+        <svg class="icon-sound" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+          <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"></path>
+        </svg>
+        <svg class="icon-muted" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="display:none;">
+          <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27l4.01 4.01H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"></path>
+        </svg>
+      </button>
+
+      <!-- Music Notification Tooltip (for missing audio or guidance) -->
+      <div id="music-tooltip" class="music-tooltip" role="status" aria-live="polite">
+        <span>To play custom music, place <strong>wedding-song.mp3</strong> in <code>assets/music/</code></span>
+        <button id="close-tooltip" class="close-tooltip-btn" aria-label="Dismiss message">&times;</button>
+      </div>
+    </div>
+
+    <!-- Hidden HTML5 Audio Element -->
+    <audio id="wedding-audio" preload="metadata" loop>
+      <source src="assets/music/wedding-song.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+
+  <!-- ========================================================= -->
+  <!-- MAIN CONTENT CONTAINER                                    -->
+  <!-- ========================================================= -->
+  <main id="main-content" class="main-content">
+
+    <!-- ========================================================= -->
+    <!-- SECTION A: WELCOME / OUR INVITATION                       -->
+    <!-- ========================================================= -->
+    <section id="welcome" class="section section-welcome">
+      <div class="container welcome-container">
+        
+        <!-- Auspicious Malayalam & Sanskrit Invocations -->
+        <div class="auspicious-banner">
+          <span class="script-greeting">ശുഭാരംഭം • Auspicious Beginnings</span>
+          <p class="traditional-blessing">
+            “With the blessings of God, our cherished parents, and beloved ancestors”
+          </p>
+        </div>
+
+        <!-- Grand Invitation Plaque -->
+        <div class="invitation-plaque">
+          <img src="assets/images/ornamental-corner.svg" alt="" class="corner-filigree corner-top-left" aria-hidden="true">
+          <img src="assets/images/ornamental-corner.svg" alt="" class="corner-filigree corner-top-right" aria-hidden="true">
+          <img src="assets/images/ornamental-corner.svg" alt="" class="corner-filigree corner-bottom-left" aria-hidden="true">
+          <img src="assets/images/ornamental-corner.svg" alt="" class="corner-filigree corner-bottom-right" aria-hidden="true">
+          <!-- Royal Swans & Lotus Pond Crest -->
+          <div class="welcome-swans-wrap">
+            <img src="assets/images/swans-harmony.svg" alt="Royal Swans in Harmony on Lotus Pond" class="welcome-swans">
+          </div>
+
+          <p class="invitation-intro">The Balan &amp; McLean Families joyfully invite you to celebrate the marriage of</p>
+          
+          <h1 class="invitation-couple">
+            <span class="name-bride">Sandra Balan</span>
+            <span class="name-connector">and</span>
+            <span class="name-groom">Lachlan James McLean</span>
+          </h1>
+
+          <div class="invitation-ornament">
+            <img src="assets/images/parrot-vine.svg" alt="Traditional Kerala Parrots on Jasmine and Lotus Vine" class="section-divider-vine">
+          </div>
+
+          <!-- Invitation Message Body (Easily Editable) -->
+          <div class="invitation-message">
+            <p>
+              Two hearts, two rich heritage traditions, and one beautiful journey. 
+              As we prepare to unite our lives in the lush serenity of Kerala, 
+              we warmly invite you to be part of our wedding celebrations.
+            </p>
+            <p>
+              Your presence, warmth, and blessings will make our special days truly unforgettable.
+            </p>
+          </div>
+
+          <!-- Highlight Date Badge -->
+          <div class="wedding-date-highlight">
+            <div class="date-chip">
+              <span class="chip-label">Celebration Festivities</span>
+              <span class="chip-main">17 — 21 February 2027</span>
+              <span class="chip-sub">Kochi, God's Own Country, Kerala</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Live Countdown Timer to 20 February 2027 -->
+        <div class="countdown-section" aria-label="Wedding Countdown">
+          <h2 class="countdown-heading">Counting Down to Our Wedding Day</h2>
+          <div id="wedding-countdown" class="countdown-grid">
+            <div class="countdown-item">
+              <span id="days" class="countdown-number">00</span>
+              <span class="countdown-label">Days</span>
+            </div>
+            <div class="countdown-colon">:</div>
+            <div class="countdown-item">
+              <span id="hours" class="countdown-number">00</span>
+              <span class="countdown-label">Hours</span>
+            </div>
+            <div class="countdown-colon">:</div>
+            <div class="countdown-item">
+              <span id="minutes" class="countdown-number">00</span>
+              <span class="countdown-label">Minutes</span>
+            </div>
+            <div class="countdown-colon">:</div>
+            <div class="countdown-item">
+              <span id="seconds" class="countdown-number">00</span>
+              <span class="countdown-label">Seconds</span>
+            </div>
+          </div>
+          <p class="countdown-sub">Saturday, 20 February 2027 • Kochi, Kerala</p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================= -->
+    <!-- SECTION B: OUR STORY                                      -->
+    <!-- ========================================================= -->
+    <section id="story" class="section section-story">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-tag">A Romantic Journey</div>
+          <h2 class="section-title">Our Story</h2>
+          <img src="assets/images/parrot-vine.svg" alt="" class="section-divider-vine" aria-hidden="true">
+          <p class="section-subtitle">
+            From the first shared smile across continents to a lifetime of love and laughter. 
+            Here is a glimpse of how our paths intertwined.
+          </p>
+        </div>
+
+        <!-- Timeline -->
+        <div class="story-timeline">
+          
+          <!-- Timeline Item 1 -->
+          <article class="timeline-item">
+            <div class="timeline-marker">
+              <span class="marker-dot">🌸</span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-card">
+                <div class="timeline-media">
+                  <img src="assets/images/prewedding.svg" alt="The First Spark" class="timeline-img" loading="lazy">
+                  <span class="timeline-badge">Chapter One</span>
+                </div>
+                <div class="timeline-body">
+                  <h3 class="timeline-title">The First Spark</h3>
+                  <div class="timeline-meta">A Serendipitous Meeting</div>
+                  <p class="timeline-text">
+                    What began as an effortless conversation quickly blossomed into hours of shared stories, 
+                    deep laughter, and an undeniable connection. Two different worlds found an unexpected, 
+                    harmonious rhythm that felt like home from the very first day.
+                  </p>
+                  <p class="timeline-placeholder-note">
+                    <em>[Editable: Replace this text with your personal story of how you both met.]</em>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Timeline Item 2 -->
+          <article class="timeline-item timeline-reverse">
+            <div class="timeline-marker">
+              <span class="marker-dot">🌿</span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-card">
+                <div class="timeline-media">
+                  <img src="assets/images/sangeet-celebration.svg" alt="Journeys and Memories" class="timeline-img" loading="lazy">
+                  <span class="timeline-badge">Chapter Two</span>
+                </div>
+                <div class="timeline-body">
+                  <h3 class="timeline-title">Bridging Two Worlds</h3>
+                  <div class="timeline-meta">Adventures Across Oceans</div>
+                  <p class="timeline-text">
+                    Through travels, introducing each other to cherished family traditions, culinary discoveries, 
+                    and quiet Sunday mornings, we learned that love speaks every language. From Kerala's lush 
+                    spice trails to western coastal breezes, every journey brought us closer together.
+                  </p>
+                  <p class="timeline-placeholder-note">
+                    <em>[Editable: Add your favorite shared travel memory or milestone here.]</em>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Timeline Item 3 -->
+          <article class="timeline-item">
+            <div class="timeline-marker">
+              <span class="marker-dot">💍</span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-card">
+                <div class="timeline-media">
+                  <img src="assets/images/couple-portrait.svg" alt="The Proposal" class="timeline-img" loading="lazy">
+                  <span class="timeline-badge">Chapter Three</span>
+                </div>
+                <div class="timeline-body">
+                  <h3 class="timeline-title">The Question Under the Stars</h3>
+                  <div class="timeline-meta">A Heartfelt "Yes"</div>
+                  <p class="timeline-text">
+                    On a golden evening surrounded by the quiet whisper of nature, Lachlan asked Sandra to 
+                    walk alongside him forever. With tears of joy, happy laughter, and open hearts, 
+                    the promise was sealed.
+                  </p>
+                  <p class="timeline-placeholder-note">
+                    <em>[Editable: Share the story of your engagement and proposal here.]</em>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Timeline Item 4 -->
+          <article class="timeline-item timeline-reverse">
+            <div class="timeline-marker">
+              <span class="marker-dot">🪷</span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-card">
+                <div class="timeline-media">
+                  <img src="assets/images/traditional-attire.svg" alt="Two Traditions One Celebration" class="timeline-img" loading="lazy">
+                  <span class="timeline-badge">Chapter Four</span>
+                </div>
+                <div class="timeline-body">
+                  <h3 class="timeline-title">Beginning Our Forever</h3>
+                  <div class="timeline-meta">February 2027 • Kerala</div>
+                  <p class="timeline-text">
+                    Now, we prepare to celebrate our union through sacred traditional rituals 
+                    and a joyous wedding reception, surrounded by the family and friends who have shaped who we are. 
+                    The best chapter of our lives is just getting started.
+                  </p>
+                  <p class="timeline-placeholder-note">
+                    <em>[Editable: Add your closing reflection as you invite guests to celebrate.]</em>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================= -->
+    <!-- SECTION C: WEDDING CELEBRATIONS (3 Event Cards)           -->
+    <!-- ========================================================= -->
+    <section id="celebrations" class="section section-celebrations">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-tag">Festivities &amp; Ceremonies</div>
+          <h2 class="section-title">Wedding Celebrations</h2>
+          <img src="assets/images/parrot-vine.svg" alt="" class="section-divider-vine" aria-hidden="true">
+          <p class="section-subtitle">
+            We are honored to celebrate our union over three joyous days in February 2027. 
+            Below are the events for our wedding week.
+          </p>
+        </div>
+
+        <!-- 3 Event Cards Grid -->
+        <div class="events-grid">
+          
+          <!-- Event 1: Haldi & Sangeet -->
+          <article class="event-card">
+            <div class="event-card-header haldi-header">
+              <div class="event-icon">🦜</div>
+              <span class="event-number">Event 01</span>
+            </div>
+
+            <div class="event-card-body">
+              <h3 class="event-title">Haldi &amp; Sangeet</h3>
+              
+              <div class="event-date-row">
+                <span class="event-date-icon">📅</span>
+                <span class="event-date-text">Wednesday, 17 February 2027</span>
+              </div>
+
+              <!-- Venue Details -->
+              <div class="event-info-block">
+                <div class="info-label">Venue:</div>
+                <div class="info-value">
+                  <strong>Tamarind Heritage</strong>
+                  <span class="info-sub">Kochi, Kerala, India</span>
+                </div>
+              </div>
+
+              <!-- Time Breakdown: Haldi Morning, Sangeet Night -->
+              <div class="event-info-block">
+                <div class="info-label">Schedule &amp; Timings:</div>
+                <div class="info-value">
+                  <div class="timing-badge-row">
+                    <span class="placeholder-tag">Haldi Ceremony: Morning</span>
+                    <span class="placeholder-tag">Sangeet Celebration: Night</span>
+                  </div>
+                  <span class="info-sub">Specific hours to be announced closer to the date</span>
+                </div>
+              </div>
+
+              <!-- Dress Code & Color Palette -->
+              <div class="event-info-block">
+                <div class="info-label">Attire &amp; Color Palettes:</div>
+                <div class="info-value">
+                  <!-- Haldi Color Palette Card -->
+                  <div class="palette-card-wrap">
+                    <span class="palette-subhead">Haldi Ceremony Palette:</span>
+                    <div class="palette-img-frame">
+                      <img src="assets/images/palette-haldi.jpg" onerror="this.onerror=null; this.src='assets/images/palette-haldi.svg';" alt="Haldi Ceremony Color Palette" class="palette-img" loading="lazy">
+                    </div>
+                    <span class="palette-caption-text">Sunshine yellows, auspicious turmerics, marigold oranges, and festive coral pinks</span>
+                  </div>
+
+                  <!-- Sangeet Celebration Colors -->
+                  <div class="sangeet-colors-wrap">
+                    <span class="palette-subhead">Sangeet Celebration:</span>
+                    <p class="sangeet-colors-text"><span class="placeholder-tag">Any Sort of Colors</span></p>
+                    <span class="info-sub">Feel free to wear any vibrant, joyful colors of your choice — kurtas, lehengas, sherwanis, or festive fusion wear for an energetic night of music and dancing!</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Description -->
+              <p class="event-description">
+                A joyous celebration beginning with sacred turmeric blessings in the morning, 
+                followed by an energetic night of Sangeet filled with music, dancing, and heartfelt performances.
+              </p>
+            </div>
+
+            <div class="event-card-footer">
+              <a href="#venues" class="event-link">View Venue Details &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Event 2: Hindu Wedding -->
+          <article class="event-card featured-event">
+            <div class="event-card-header hindu-header">
+              <div class="event-icon">🦚</div>
+              <span class="event-number">Event 02</span>
+            </div>
+
+            <div class="event-card-body">
+              <h3 class="event-title">Traditional Hindu Wedding</h3>
+              
+              <div class="event-date-row">
+                <span class="event-date-icon">📅</span>
+                <span class="event-date-text">Saturday, 20 February 2027</span>
+              </div>
+
+              <!-- Venue Details -->
+              <div class="event-info-block">
+                <div class="info-label">Venue:</div>
+                <div class="info-value">
+                  <strong>Green Nest Kumbalangi</strong>
+                  <span class="info-sub">Kumbalangi Backwaters, Kochi, Kerala</span>
+                </div>
+              </div>
+
+              <!-- Time Placeholder -->
+              <div class="event-info-block">
+                <div class="info-label">Muhurtham &amp; Ceremony:</div>
+                <div class="info-value info-placeholder">
+                  <span class="placeholder-tag">Auspicious timing to be announced</span>
+                  <span class="info-sub">Sacred morning ceremony followed by traditional Sadhya feast</span>
+                </div>
+              </div>
+
+              <!-- Dress Code & Color Palette: Pastel Pink & Pastel Green -->
+              <div class="event-info-block">
+                <div class="info-label">Attire &amp; Color Palette:</div>
+                <div class="info-value">
+                  <!-- Hindu Wedding Palette Card -->
+                  <div class="palette-card-wrap">
+                    <span class="palette-subhead">Hindu Wedding Palette:</span>
+                    <div class="palette-img-frame">
+                      <img src="assets/images/palette-hindu-wedding.jpg" onerror="this.onerror=null; this.src='assets/images/palette-hindu-wedding.svg';" alt="Hindu Wedding Color Palette" class="palette-img" loading="lazy">
+                    </div>
+                    <span class="palette-caption-text">Lotus flower aesthetic: Soft pastel pinks, pastel sage greens, soft mint, and Kerala Kasavu (cream &amp; gold zari)</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Description -->
+              <p class="event-description">
+                A traditional Kerala Hindu wedding ceremony set against the tranquil backwaters of Kumbalangi. 
+                Honoring timeless Vedic rites, sacred mantras, floral garlands, and an authentic Kerala Sadhya feast.
+              </p>
+            </div>
+
+            <div class="event-card-footer">
+              <a href="#venues" class="event-link">View Venue Details &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Event 3: Wedding Reception (Final Event) -->
+          <article class="event-card featured-event">
+            <div class="event-card-header reception-header">
+              <div class="event-icon">🦢</div>
+              <span class="event-number">Event 03</span>
+            </div>
+
+            <div class="event-card-body">
+              <h3 class="event-title">Wedding Reception</h3>
+              
+              <div class="event-date-row">
+                <span class="event-date-icon">📅</span>
+                <span class="event-date-text">Sunday, 21 February 2027</span>
+              </div>
+
+              <!-- Venue Details -->
+              <div class="event-info-block">
+                <div class="info-label">Venue:</div>
+                <div class="info-value">
+                  <strong>Mangalassery Pavilion</strong>
+                  <span class="info-sub">Kochi, Kerala, India</span>
+                </div>
+              </div>
+
+              <!-- Time Placeholder -->
+              <div class="event-info-block">
+                <div class="info-label">Schedule &amp; Toasts:</div>
+                <div class="info-value info-placeholder">
+                  <span class="placeholder-tag">Evening celebration timing to be announced</span>
+                  <span class="info-sub">Grand dinner, toasts, celebratory speeches &amp; dancing</span>
+                </div>
+              </div>
+
+              <!-- Dress Code & Color Palette: Formal Evening or Elegant Indian -->
+              <div class="event-info-block">
+                <div class="info-label">Attire &amp; Color Palette:</div>
+                <div class="info-value">
+                  <!-- Reception Palette Card -->
+                  <div class="palette-card-wrap">
+                    <span class="palette-subhead">Reception Color Palette:</span>
+                    <div class="palette-img-frame">
+                      <img src="assets/images/palette-reception.jpg" onerror="this.onerror=null; this.src='assets/images/palette-reception.svg';" alt="Wedding Reception Color Palette" class="palette-img" loading="lazy">
+                    </div>
+                    <span class="palette-caption-text">Formal evening wear, classic tuxedos/suits, evening gowns, champagne silks, or glamorous Indian silks</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Description -->
+              <p class="event-description">
+                An enchanting evening of fine dining, celebratory toasts, music, and dancing under the stars 
+                at Mangalassery Pavilion to culminate our wedding week festivities with all our beloved guests.
+              </p>
+            </div>
+
+            <div class="event-card-footer">
+              <a href="#venues" class="event-link">View Venue Details &rarr;</a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================= -->
+    <!-- SECTION D: VENUES & DIRECTIONS                            -->
+    <!-- ========================================================= -->
+    <section id="venues" class="section section-venues">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-tag">Locations &amp; Travel</div>
+          <h2 class="section-title">Venues &amp; Directions</h2>
+          <img src="assets/images/parrot-vine.svg" alt="" class="section-divider-vine" aria-hidden="true">
+          <p class="section-subtitle">
+            Find directions, travel advice, and location details for our confirmed venues in Kochi, Kerala.
+          </p>
+        </div>
+
+        <div class="venues-grid">
+
+          <!-- Venue 1: Tamarind Heritage (First) -->
+          <article class="venue-card">
+            <div class="venue-img-wrap">
+              <img src="assets/images/venue-tamarind.svg" alt="Tamarind Heritage Kochi" class="venue-img" loading="lazy">
+              <span class="venue-badge">Haldi &amp; Sangeet Venue</span>
+            </div>
+
+            <div class="venue-body">
+              <h3 class="venue-title">Tamarind Heritage</h3>
+              
+              <div class="venue-event-assoc">
+                <strong>Event:</strong> Haldi (Morning) &amp; Sangeet (Night) — Wednesday, 17 February 2027
+              </div>
+
+              <div class="venue-travel-tips">
+                <div class="tips-title">Travel &amp; Setting:</div>
+                <p>
+                  A grand heritage property featuring classic Kerala architecture, carved wooden verandahs, 
+                  and tranquil courtyard lawns. Perfectly appointed for our morning Haldi and night Sangeet celebrations.
+                </p>
+              </div>
+
+              <div class="venue-action">
+                <a href="https://www.google.com/maps/search/?api=1&query=Tamarind+Heritage+Kochi+Kerala" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="btn-directions">
+                  <span class="btn-icon">📍</span>
+                  <span>Get Directions on Google Maps</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Venue 2: Green Nest Kumbalangi (Second) -->
+          <article class="venue-card">
+            <div class="venue-img-wrap">
+              <img src="assets/images/venue-kumbalangi.svg" alt="Green Nest Kumbalangi Backwater Venue" class="venue-img" loading="lazy">
+              <span class="venue-badge">Hindu Wedding Venue</span>
+            </div>
+
+            <div class="venue-body">
+              <h3 class="venue-title">Green Nest Kumbalangi</h3>
+              
+              <div class="venue-event-assoc">
+                <strong>Event:</strong> Traditional Hindu Wedding — Saturday, 20 February 2027
+              </div>
+
+              <div class="venue-travel-tips">
+                <div class="tips-title">Travel &amp; Setting:</div>
+                <p>
+                  Located in India’s first model tourism village. Surrounded by serene waterways, 
+                  Chinese fishing nets, and coconut palms. Accessible via scenic roadway from central Kochi (approx. 35 mins from MG Road).
+                </p>
+              </div>
+
+              <div class="venue-action">
+                <a href="https://www.google.com/maps/search/?api=1&query=Green+Nest+Kumbalangi+Kochi+Kerala" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="btn-directions">
+                  <span class="btn-icon">📍</span>
+                  <span>Get Directions on Google Maps</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Venue 3: Mangalassery Pavilion (Third) -->
+          <article class="venue-card">
+            <div class="venue-img-wrap">
+              <img src="assets/images/venue-mangalassery.svg" alt="Mangalassery Pavilion Heritage Venue" class="venue-img" loading="lazy">
+              <span class="venue-badge">Wedding Reception Venue</span>
+            </div>
+
+            <div class="venue-body">
+              <h3 class="venue-title">Mangalassery Pavilion</h3>
+              
+              <div class="venue-event-assoc">
+                <strong>Event:</strong> Wedding Reception — Sunday, 21 February 2027
+              </div>
+
+              <div class="venue-travel-tips">
+                <div class="tips-title">Travel &amp; Setting:</div>
+                <p>
+                  A magnificent pavilion featuring classic Kerala architecture, manicured ceremonial lawns, 
+                  and spacious covered banquet facilities. Conveniently reachable from main Kochi transit hubs.
+                </p>
+              </div>
+
+              <div class="venue-action">
+                <a href="https://www.google.com/maps/search/?api=1&query=Mangalassery+Pavilion+Kochi+Kerala" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="btn-directions">
+                  <span class="btn-icon">📍</span>
+                  <span>Get Directions on Google Maps</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================= -->
+    <!-- SECTION E: PHOTO GALLERY & LIGHTBOX                       -->
+    <!-- ========================================================= -->
+    <section id="gallery" class="section section-gallery">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-tag">Visual Moments</div>
+          <h2 class="section-title">Photo Gallery</h2>
+          <img src="assets/images/parrot-vine.svg" alt="" class="section-divider-vine" aria-hidden="true">
+          <p class="section-subtitle">
+            A glimpse into our romance, Kerala's enchanting floral aesthetics, and timeless traditional attire. 
+            Click any photograph to view in high resolution.
+          </p>
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div class="gallery-filter-tabs" role="tablist" aria-label="Gallery Categories">
+          <button class="gallery-tab active" data-filter="all" role="tab" aria-selected="true">All Moments</button>
+          <button class="gallery-tab" data-filter="portraits" role="tab" aria-selected="false">Couple Portraits</button>
+          <button class="gallery-tab" data-filter="attire" role="tab" aria-selected="false">Traditional Attire</button>
+          <button class="gallery-tab" data-filter="floral" role="tab" aria-selected="false">Floral &amp; Décor</button>
+          <button class="gallery-tab" data-filter="prewedding" role="tab" aria-selected="false">Pre-Wedding</button>
+        </div>
+
+        <!-- Responsive Gallery Grid -->
+        <div class="gallery-grid">
+          
+          <!-- Item 1: Couple Portrait -->
+          <figure class="gallery-item" data-category="portraits">
+            <div class="gallery-frame" tabindex="0" role="button" aria-label="View Sandra &amp; Lachlan Couple Portrait">
+              <img src="assets/images/couple-portrait.svg" alt="Sandra &amp; Lachlan Couple Portrait" class="gallery-thumb" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="overlay-icon">🔍</span>
+                <h4 class="overlay-title">Sandra &amp; Lachlan</h4>
+                <p class="overlay-caption">Couple Portrait • February 2027</p>
+              </div>
+            </div>
+            <figcaption class="gallery-caption-text">Sandra &amp; Lachlan — Together in Love</figcaption>
+          </figure>
+
+          <!-- Item 2: Traditional Attire -->
+          <figure class="gallery-item" data-category="attire">
+            <div class="gallery-frame" tabindex="0" role="button" aria-label="View Traditional Kasavu &amp; Silks">
+              <img src="assets/images/traditional-attire.svg" alt="Traditional Kerala Kasavu and Silks" class="gallery-thumb" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="overlay-icon">🔍</span>
+                <h4 class="overlay-title">Kasavu &amp; Heritage Silks</h4>
+                <p class="overlay-caption">Handwoven gold zari &amp; fragrant jasmine</p>
+              </div>
+            </div>
+            <figcaption class="gallery-caption-text">Kerala Heritage Kasavu Attire</figcaption>
+          </figure>
+
+          <!-- Item 3: Floral Mandap & Decor -->
+          <figure class="gallery-item" data-category="floral">
+            <div class="gallery-frame" tabindex="0" role="button" aria-label="View Floral Mandap &amp; Décor">
+              <img src="assets/images/floral-decor.svg" alt="Floral Mandap and Brass Urlis" class="gallery-thumb" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="overlay-icon">🔍</span>
+                <h4 class="overlay-title">Lotus &amp; Jasmine Mandap</h4>
+                <p class="overlay-caption">Traditional brass urlis with floating petals</p>
+              </div>
+            </div>
+            <figcaption class="gallery-caption-text">Sacred Lotus &amp; Jasmine Décor</figcaption>
+          </figure>
+
+          <!-- Item 4: Pre-Wedding Serenade -->
+          <figure class="gallery-item" data-category="prewedding">
+            <div class="gallery-frame" tabindex="0" role="button" aria-label="View Pre-Wedding Serenade">
+              <img src="assets/images/prewedding.svg" alt="Pre-Wedding Backwater Serenade" class="gallery-thumb" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="overlay-icon">🔍</span>
+                <h4 class="overlay-title">Kumbalangi Serenade</h4>
+                <p class="overlay-caption">Sunset across tranquil backwaters</p>
+              </div>
+            </div>
+            <figcaption class="gallery-caption-text">Sunset Over Kumbalangi Backwaters</figcaption>
+          </figure>
+
+          <!-- Item 5: Haldi & Sangeet Celebration -->
+          <figure class="gallery-item" data-category="floral">
+            <div class="gallery-frame" tabindex="0" role="button" aria-label="View Haldi &amp; Sangeet Décor">
+              <img src="assets/images/sangeet-celebration.svg" alt="Haldi and Sangeet Festivities" class="gallery-thumb" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="overlay-icon">🔍</span>
+                <h4 class="overlay-title">Sangeet &amp; Haldi Vibes</h4>
+                <p class="overlay-caption">Marigold garlands &amp; joyful rhythms</p>
+              </div>
+            </div>
+            <figcaption class="gallery-caption-text">Vibrant Marigold &amp; Sangeet Lights</figcaption>
+          </figure>
+
+          <!-- Item 6: Kumbalangi Waterfront -->
+          <figure class="gallery-item" data-category="prewedding">
+            <div class="gallery-frame" tabindex="0" role="button" aria-label="View Kumbalangi Waterfront View">
+              <img src="assets/images/venue-kumbalangi.svg" alt="Kumbalangi Waterfront Scenic View" class="gallery-thumb" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="overlay-icon">🔍</span>
+                <h4 class="overlay-title">Backwater Serenity</h4>
+                <p class="overlay-caption">Iconic Chinese fishing nets &amp; palms</p>
+              </div>
+            </div>
+            <figcaption class="gallery-caption-text">Chinese Fishing Nets at Sunset</figcaption>
+          </figure>
+
+          <!-- Item 7: Royal Indian Peacock & Sacred Lotus -->
+          <figure class="gallery-item" data-category="floral">
+            <div class="gallery-frame" tabindex="0" role="button" aria-label="View Sacred Lotus &amp; Royal Peacock Artwork">
+              <img src="assets/images/peacock-lotus.svg" alt="Sacred Lotus and Royal Peacock" class="gallery-thumb" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="overlay-icon">🔍</span>
+                <h4 class="overlay-title">Mayil &amp; Sacred Lotus</h4>
+                <p class="overlay-caption">Pastel pink petals &amp; royal peacock feathers</p>
+              </div>
+            </div>
+            <figcaption class="gallery-caption-text">Sacred Lotus &amp; Royal Peacock</figcaption>
+          </figure>
+
+          <!-- Item 8: Royal Swans in Harmony (Hamsa) -->
+          <figure class="gallery-item" data-category="floral">
+            <div class="gallery-frame" tabindex="0" role="button" aria-label="View Royal Swans in Harmony Artwork">
+              <img src="assets/images/swans-harmony.svg" alt="Royal Swans in Harmony on Lotus Pond" class="gallery-thumb" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="overlay-icon">🔍</span>
+                <h4 class="overlay-title">Hamsa &amp; Lotus Pond</h4>
+                <p class="overlay-caption">Symbol of devotion, grace &amp; lifelong union</p>
+              </div>
+            </div>
+            <figcaption class="gallery-caption-text">Royal Swans in Harmony</figcaption>
+          </figure>
+
+        </div>
+
+        <!-- Note on Replacing Images -->
+        <div class="gallery-guide-box">
+          <span class="guide-icon">💡</span>
+          <p>
+            <strong>Personalizing your gallery:</strong> You can easily replace these placeholder illustrations 
+            with your own high-resolution photographs by saving your photos inside <code>assets/images/</code> 
+            and updating the image paths in <code>index.html</code>. Full instructions are provided in <code>README.md</code>.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Lightbox Modal for Gallery -->
+    <div id="gallery-lightbox" class="gallery-lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Enlarged Image View">
+      <div class="lightbox-overlay"></div>
+      <div class="lightbox-container">
+        <button id="lightbox-close" class="lightbox-btn lightbox-btn-close" aria-label="Close image viewer">&times;</button>
+        <button id="lightbox-prev" class="lightbox-btn lightbox-btn-prev" aria-label="Previous photograph">&#10094;</button>
+        <button id="lightbox-next" class="lightbox-btn lightbox-btn-next" aria-label="Next photograph">&#10095;</button>
+        
+        <div class="lightbox-content">
+          <img id="lightbox-img" src="" alt="Enlarged gallery view" class="lightbox-image">
+          <div id="lightbox-caption" class="lightbox-caption"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ========================================================= -->
+    <!-- SECTION F: RSVP FORM                                      -->
+    <!-- ========================================================= -->
+    <section id="rsvp" class="section section-rsvp">
+      <div class="container rsvp-container">
+        
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-tag">Celebrate With Us</div>
+          <h2 class="section-title">RSVP</h2>
+          <img src="assets/images/parrot-vine.svg" alt="" class="section-divider-vine" aria-hidden="true">
+          <p class="section-subtitle">
+            Kindly respond by <strong>January 1, 2027</strong> so we may reserve your seat 
+            and finalize arrangements with our venues.
+          </p>
+        </div>
+
+        <!-- RSVP Card Form Container -->
+        <div class="rsvp-card">
+          <img src="assets/images/ornamental-corner.svg" alt="" class="corner-filigree corner-top-left" aria-hidden="true">
+          <img src="assets/images/ornamental-corner.svg" alt="" class="corner-filigree corner-top-right" aria-hidden="true">
+          <img src="assets/images/ornamental-corner.svg" alt="" class="corner-filigree corner-bottom-left" aria-hidden="true">
+          <img src="assets/images/ornamental-corner.svg" alt="" class="corner-filigree corner-bottom-right" aria-hidden="true">
+
+          <form id="rsvp-form" class="rsvp-form" novalidate>
+            
+            <!-- Row 1: Full Name -->
+            <div class="form-group">
+              <label for="rsvp-name" class="form-label">
+                Full Name(s) <span class="required-asterisk">*</span>
+              </label>
+              <input type="text" 
+                     id="rsvp-name" 
+                     name="guest_name" 
+                     class="form-input" 
+                     placeholder="e.g. Priyan Balan &amp; Family" 
+                     required>
+              <span class="field-error" id="name-error">Please enter your name.</span>
+            </div>
+
+            <!-- Row 2: Contact Info (Phone / WhatsApp) -->
+            <div class="form-group">
+              <label for="rsvp-phone" class="form-label">
+                Phone / WhatsApp Number <span class="required-asterisk">*</span>
+              </label>
+              <input type="tel" 
+                     id="rsvp-phone" 
+                     name="phone" 
+                     class="form-input" 
+                     placeholder="e.g. +91 98765 43210 or +61 400 000 000" 
+                     required>
+              <span class="field-error" id="phone-error">Please enter your phone or WhatsApp number.</span>
+              <span class="field-helper">Useful for wedding week transport &amp; schedule updates.</span>
+            </div>
+
+            <!-- Row 3: Attendance Confirmation (Radio) -->
+            <div class="form-group">
+              <span class="form-label">Will you be able to attend? <span class="required-asterisk">*</span></span>
+              <div class="radio-options-grid">
+                <label class="radio-card">
+                  <input type="radio" name="attendance" value="attending" checked>
+                  <span class="radio-custom"></span>
+                  <span class="radio-text">
+                    <strong>Joyfully Accepts</strong>
+                    <small>Can't wait to celebrate together!</small>
+                  </span>
+                </label>
+                
+                <label class="radio-card">
+                  <input type="radio" name="attendance" value="declining">
+                  <span class="radio-custom"></span>
+                  <span class="radio-text">
+                    <strong>Regretfully Declines</strong>
+                    <small>Will be celebrating in spirit</small>
+                  </span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Dynamic Section: Shown if Attending -->
+            <div id="attendance-details" class="attendance-details">
+              
+              <!-- Number of Guests -->
+              <div class="form-group">
+                <label for="rsvp-guest-count" class="form-label">
+                  Total Number of Guests in Your Party (including yourself)
+                </label>
+                <select id="rsvp-guest-count" name="guest_count" class="form-select">
+                  <option value="1">1 Guest</option>
+                  <option value="2" selected>2 Guests</option>
+                  <option value="3">3 Guests</option>
+                  <option value="4">4 Guests</option>
+                  <option value="5+">5+ Guests (please mention in notes)</option>
+                </select>
+              </div>
+
+            </div>
+
+            <!-- Warm Message for Sandra & Lachlan -->
+            <div class="form-group">
+              <label for="rsvp-message" class="form-label">
+                Warm Wishes &amp; Special Notes for Sandra &amp; Lachlan
+              </label>
+              <textarea id="rsvp-message" 
+                        name="message" 
+                        class="form-textarea" 
+                        rows="3" 
+                        placeholder="Leave a heartfelt note or message..."></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-submit-row">
+              <button type="submit" id="rsvp-submit-btn" class="btn-rsvp-submit">
+                <span class="btn-text">Confirm My RSVP</span>
+                <span class="btn-icon">💌</span>
+              </button>
+            </div>
+
+          </form>
+
+          <!-- RSVP Success Modal Preview -->
+          <div id="rsvp-success-modal" class="rsvp-success-modal" role="dialog" aria-modal="true" aria-hidden="true">
+            <div class="success-backdrop"></div>
+            <div class="success-card">
+              <div class="success-icon-wrap">
+                <span class="success-icon">🪷</span>
+              </div>
+              <h3 class="success-title">Nandri &amp; Thank You!</h3>
+              <p class="success-subtitle">Your RSVP has been saved and prepared for Sandra &amp; Lachlan.</p>
+              
+              <div id="rsvp-summary-content" class="rsvp-summary-content">
+                <!-- Injected dynamically by script.js -->
+              </div>
+
+              <div class="success-actions">
+                <button id="btn-close-rsvp-modal" class="btn-success-close">Done &amp; Return to Invitation</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================= -->
+    <!-- SECTION G: FREQUENTLY ASKED QUESTIONS (FAQ)               -->
+    <!-- ========================================================= -->
+    <section id="faq" class="section section-faq">
+      <div class="container faq-container">
+        
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-tag">Guest Information</div>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <img src="assets/images/parrot-vine.svg" alt="" class="section-divider-vine" aria-hidden="true">
+          <p class="section-subtitle">
+            Everything you need to know about celebrating with us in Kerala. 
+            All details can be edited as schedules are confirmed.
+          </p>
+        </div>
+
+        <!-- Accordion List -->
+        <div class="faq-accordion" role="region" aria-label="Wedding FAQs">
+          
+          <!-- FAQ 1: Dates -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-q-text">What are the main wedding dates and schedule for February 2027?</span>
+              <span class="faq-toggle-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Our celebrations span three days in mid-February 2027:</p>
+                <ul>
+                  <li><strong>Wednesday, 17 February 2027:</strong> Haldi Ceremony (morning) &amp; Sangeet Celebration (night) at Tamarind Heritage.</li>
+                  <li><strong>Saturday, 20 February 2027:</strong> Traditional Hindu Wedding at Green Nest Kumbalangi.</li>
+                  <li><strong>Sunday, 21 February 2027:</strong> Wedding Reception at Mangalassery Pavilion.</li>
+                </ul>
+                <p>Specific ceremony hours and muhurtham timings will be published as they are finalized.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2: Dress Code & Color Palettes -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-q-text">What is the dress code and color palette for each celebration?</span>
+              <span class="faq-toggle-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>We welcome you to embrace both traditional Indian elegance and classic formal wear:</p>
+                <ul>
+                  <li><strong>Haldi Ceremony:</strong> Please refer to the Haldi color palette on the event card (joyful sunshine yellows, turmerics, marigold oranges, and festive coral pinks).</li>
+                  <li><strong>Sangeet Celebration:</strong> Any sort of colors of your choice! Feel free to wear any vibrant, joyful colors and festive kurtas or lehengas.</li>
+                  <li><strong>Traditional Hindu Wedding:</strong> Pastel pink and pastel green colors just like a lotus flower, as well as traditional Kerala Kasavu (cream and gold border sarees or mundu).</li>
+                  <li><strong>Wedding Reception:</strong> Formal western suits, evening gowns, cocktail dresses, or glamorous Indian silks and fusion wear.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3: Weather -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-q-text">What is the weather like in Kerala during February?</span>
+              <span class="faq-toggle-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>
+                  February is one of the most delightful times of the year to visit Kerala! 
+                  Days are typically sunny and warm with daytime temperatures around 28°C to 31°C (82°F – 88°F), 
+                  and evenings cool down pleasantly with gentle coastal backwater breezes around 22°C to 24°C (72°F – 75°F). 
+                  Lightweight breathable fabrics (cotton, linen, silk) are highly recommended.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4: Contact Information -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-q-text">Who can I contact if I have further travel or logistics questions?</span>
+              <span class="faq-toggle-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>
+                  Please feel free to reach out to the wedding coordinator or family representatives:
+                </p>
+                <ul>
+                  <li><strong>Balan Family (Kerala):</strong> <em>[Placeholder: +91 98765 43210 / email]</em></li>
+                  <li><strong>McLean Family:</strong> <em>[Placeholder: +61 400 000 000 / email]</em></li>
+                  <li><strong>General Enquiries:</strong> <em>[Placeholder: wedding.sandra.lachlan@gmail.com]</em></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ========================================================= -->
+  <!-- FOOTER                                                    -->
+  <!-- ========================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <!-- Kerala Kasavu Gold Ribbon Trim -->
+      <div class="footer-kasavu-strip" aria-hidden="true"></div>
+
+      <!-- Royal Swans Emblem -->
+      <div class="footer-swans-wrap">
+        <img src="assets/images/swans-harmony.svg" alt="Royal Swans in Harmony on Lotus Pond" class="footer-swans-motif">
+      </div>
+
+      <!-- Auspicious Malayalam Script Blessing -->
+      <div class="footer-blessing">
+        <span class="malayalam-script">ശുഭ മംഗളം • Shubh Mangalam</span>
+        <p class="blessing-translation">
+          May your union be blessed with eternal love, harmony, and joy.
+        </p>
+      </div>
+
+      <!-- Monogram & Names -->
+      <div class="footer-couple">
+        <h3 class="footer-names">Sandra Balan &amp; Lachlan James McLean</h3>
+        <p class="footer-date">February 2027 • God's Own Country, Kerala, India</p>
+      </div>
+
+      <!-- Quick Jump Links -->
+      <nav class="footer-nav" aria-label="Footer Quick Links">
+        <a href="#welcome">Invitation</a>
+        <span class="nav-sep">•</span>
+        <a href="#story">Our Story</a>
+        <span class="nav-sep">•</span>
+        <a href="#celebrations">Celebrations</a>
+        <span class="nav-sep">•</span>
+        <a href="#venues">Venues</a>
+        <span class="nav-sep">•</span>
+        <a href="#gallery">Gallery</a>
+        <span class="nav-sep">•</span>
+        <a href="#rsvp">RSVP</a>
+        <span class="nav-sep">•</span>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <!-- Back to Top Button -->
+      <div class="footer-back-to-top">
+        <button id="btn-back-to-top" class="btn-back-top" aria-label="Scroll back to top of page">
+          <span class="arrow-up">&#8593;</span> Back to Top
+        </button>
+      </div>
+
+      <!-- Copyright & GitHub Pages Badge -->
+      <div class="footer-credit">
+        <p>Crafted with love for Sandra &amp; Lachlan • Ready for GitHub Pages Static Hosting</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Main JavaScript Logic -->
+  <script src="script.js?v=6"></script>
+</body>
+</html>
