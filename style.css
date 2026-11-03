@@ -171,13 +171,20 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
   width: 100vw;
+  height: 100%;
   height: 100vh;
+  height: 100dvh;
   z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1.25rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
   transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
               transform 0.8s cubic-bezier(0.16, 1, 0.3, 1),
               visibility 0.8s;
@@ -193,7 +200,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cover-backdrop {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -206,10 +213,11 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   width: 100%;
   max-width: 640px;
+  margin: auto;
   background: var(--bg-card);
   border: 2px solid var(--gold-antique);
   border-radius: var(--radius-lg);
-  padding: 3.5rem 2.5rem;
+  padding: 3rem 2.25rem;
   text-align: center;
   box-shadow: 
     0 25px 60px rgba(27, 59, 43, 0.15),
@@ -2586,12 +2594,90 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Mobile Responsiveness Tweaks */
 @media (max-width: 600px) {
+  .invitation-cover {
+    padding: 0.75rem 0.5rem;
+  }
   .cover-card {
-    padding: 2.5rem 1.25rem;
+    padding: 1.6rem 1.1rem 1.75rem;
+    border-width: 1.5px;
+    border-radius: var(--radius-md);
+    margin: auto;
+    box-shadow: 
+      0 15px 35px rgba(27, 59, 43, 0.15),
+      0 0 0 4px rgba(197, 160, 89, 0.18),
+      0 0 20px rgba(233, 59, 108, 0.22);
+  }
+  .corner-filigree {
+    width: 26px;
+    height: 26px;
+    opacity: 0.65;
+  }
+  .corner-top-left { top: 6px; left: 6px; }
+  .corner-top-right { top: 6px; right: 6px; }
+  .corner-bottom-left { bottom: 6px; left: 6px; }
+  .corner-bottom-right { bottom: 6px; right: 6px; }
+
+  .cover-auspicious {
+    margin-bottom: 0.35rem;
+  }
+  .sanskrit-blessing {
+    font-size: 0.78rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 0.15rem;
+  }
+  .cover-subtitle {
+    font-size: 0.72rem;
+    letter-spacing: 2px;
+  }
+
+  .cover-peacock-wrap {
+    width: 80px;
+    margin: 0.15rem auto 0.4rem;
+  }
+
+  .cover-names-wrap {
+    margin-bottom: 0.35rem;
+  }
+  .cover-names {
+    gap: 0;
   }
   .cover-name {
-    font-size: 2.6rem;
+    font-size: 2.15rem;
+    line-height: 1.08;
   }
+  .cover-ampersand {
+    font-size: 1.25rem;
+    margin: -0.2rem 0;
+  }
+
+  .cover-divider {
+    margin: 0.4rem auto;
+    max-width: 180px;
+  }
+
+  .cover-request {
+    font-size: 0.88rem;
+    line-height: 1.4;
+    margin-bottom: 0.55rem;
+  }
+
+  .cover-date-badge {
+    padding: 0.3rem 0.9rem;
+    font-size: 0.72rem;
+    letter-spacing: 1px;
+    margin-bottom: 0.85rem;
+    gap: 0.4rem;
+  }
+
+  .btn-open-invitation {
+    padding: 0.75rem 1.6rem;
+    font-size: 0.92rem;
+    letter-spacing: 1.2px;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 270px;
+  }
+
   .name-bride, .name-groom {
     font-size: 3rem;
   }
@@ -2608,8 +2694,52 @@ h1, h2, h3, h4, h5, h6 {
     min-width: 55px;
     padding: 0.5rem 0.25rem;
   }
+  .rsvp-card {
+    padding: 2rem 1.25rem;
+  }
   .floating-music-player {
     bottom: 1rem;
     right: 1rem;
+  }
+}
+
+/* Compact screens & Mobile Landscape Responsiveness */
+@media (max-height: 680px) {
+  .invitation-cover {
+    padding: 0.5rem;
+    align-items: flex-start;
+  }
+  .cover-card {
+    padding: 1.15rem 0.9rem 1.25rem;
+    margin: auto;
+  }
+  .cover-peacock-wrap {
+    width: 60px;
+    margin: 0.1rem auto 0.25rem;
+  }
+  .cover-name {
+    font-size: 1.8rem;
+    line-height: 1.05;
+  }
+  .cover-ampersand {
+    font-size: 1.1rem;
+    margin: -0.25rem 0;
+  }
+  .cover-divider {
+    margin: 0.25rem auto;
+  }
+  .cover-request {
+    font-size: 0.78rem;
+    line-height: 1.3;
+    margin-bottom: 0.35rem;
+  }
+  .cover-date-badge {
+    margin-bottom: 0.5rem;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.68rem;
+  }
+  .btn-open-invitation {
+    padding: 0.6rem 1.3rem;
+    font-size: 0.82rem;
   }
 }
